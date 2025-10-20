@@ -23,9 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,15 +41,16 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Label1
+        'Button2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(156, 22)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(540, 46)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Welcome Manajemen Kelas"
+        Me.Button2.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(506, 131)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(190, 97)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "DAFTAR"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -62,16 +63,15 @@ Partial Class Form1
         Me.Button1.Text = "MASUK"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Label1
         '
-        Me.Button2.BackColor = System.Drawing.Color.Fuchsia
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(506, 131)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(190, 97)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "DAFTAR"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(156, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(540, 46)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Welcome Manajemen Kelas"
         '
         'Form1
         '
