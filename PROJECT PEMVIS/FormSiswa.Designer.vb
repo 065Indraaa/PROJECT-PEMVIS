@@ -25,7 +25,6 @@ Partial Class FormSiswa
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -35,7 +34,6 @@ Partial Class FormSiswa
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
-        Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
@@ -70,20 +68,6 @@ Partial Class FormSiswa
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "SMA HARAPAN BANGSA"
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.LightPink
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Location = New System.Drawing.Point(0, 224)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(212, 39)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "LIHAT CATATAN"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -133,7 +117,6 @@ Partial Class FormSiswa
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
 End Class
