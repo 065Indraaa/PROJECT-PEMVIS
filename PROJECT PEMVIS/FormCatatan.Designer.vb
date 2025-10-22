@@ -25,23 +25,23 @@ Partial Class FormCatatan
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tanggal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idguru = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.isicatatan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,9 +64,9 @@ Partial Class FormCatatan
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(229, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(428, 55)
+        Me.Label1.Size = New System.Drawing.Size(412, 55)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CATATAN SISWA"
+        Me.Label1.Text = "ABSENSI SISWA"
         '
         'GroupBox2
         '
@@ -87,55 +87,31 @@ Partial Class FormCatatan
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         '
-        'Label2
+        'Button2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 26)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 20)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Kelas:"
+        Me.Button2.Location = New System.Drawing.Point(161, 313)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(96, 49)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Simpan"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label3
+        'Button1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 64)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 20)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Siswa:"
+        Me.Button1.Location = New System.Drawing.Point(31, 313)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 49)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Tambah Catatan"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label4
+        'TextBox1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 98)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 20)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Tanggal:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(77, 26)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 28)
-        Me.ComboBox1.TabIndex = 3
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(77, 64)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(200, 28)
-        Me.ComboBox2.TabIndex = 4
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(77, 98)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
-        Me.DateTimePicker1.TabIndex = 5
+        Me.TextBox1.Location = New System.Drawing.Point(11, 169)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(266, 114)
+        Me.TextBox1.TabIndex = 7
         '
         'Label5
         '
@@ -147,31 +123,55 @@ Partial Class FormCatatan
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Catatan:"
         '
-        'TextBox1
+        'DateTimePicker1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(11, 169)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 114)
-        Me.TextBox1.TabIndex = 7
+        Me.DateTimePicker1.Location = New System.Drawing.Point(77, 98)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker1.TabIndex = 5
         '
-        'Button1
+        'ComboBox2
         '
-        Me.Button1.Location = New System.Drawing.Point(31, 313)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 49)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Tambah Catatan"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(77, 64)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(200, 28)
+        Me.ComboBox2.TabIndex = 4
         '
-        'Button2
+        'ComboBox1
         '
-        Me.Button2.Location = New System.Drawing.Point(161, 313)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 49)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Simpan"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(77, 26)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(200, 28)
+        Me.ComboBox1.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(7, 98)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(70, 20)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Tanggal:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(7, 64)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 20)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Siswa:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 26)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(52, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Kelas:"
         '
         'DataGridView1
         '
@@ -183,26 +183,6 @@ Partial Class FormCatatan
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(549, 307)
         Me.DataGridView1.TabIndex = 2
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Location = New System.Drawing.Point(326, 124)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(549, 72)
-        Me.GroupBox3.TabIndex = 3
-        Me.GroupBox3.TabStop = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(136, 15)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(266, 37)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Riwayat Catatan"
         '
         'no
         '
@@ -232,7 +212,27 @@ Partial Class FormCatatan
         Me.isicatatan.Name = "isicatatan"
         Me.isicatatan.Width = 150
         '
-        'FormBackupRestore
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Location = New System.Drawing.Point(326, 124)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(549, 72)
+        Me.GroupBox3.TabIndex = 3
+        Me.GroupBox3.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(136, 15)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(266, 37)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Riwayat Catatan"
+        '
+        'FormCatatan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -242,7 +242,7 @@ Partial Class FormCatatan
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "FormBackupRestore"
+        Me.Name = "FormCatatan"
         Me.Text = "FormBackupRestore"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
