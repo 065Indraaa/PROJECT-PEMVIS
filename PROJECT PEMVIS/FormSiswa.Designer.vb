@@ -25,8 +25,6 @@ Partial Class FormSiswa
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -37,8 +35,6 @@ Partial Class FormSiswa
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
-        Me.GroupBox1.Controls.Add(Me.Button6)
-        Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -64,41 +60,16 @@ Partial Class FormSiswa
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(331, 16)
+        Me.Label1.Location = New System.Drawing.Point(276, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "SMA HARAPAN BANGSA"
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.LightPink
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button6.Location = New System.Drawing.Point(0, 334)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(212, 39)
-        Me.Button6.TabIndex = 10
-        Me.Button6.Text = "LAPORAN"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.LightPink
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button4.Location = New System.Drawing.Point(0, 289)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(212, 39)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "CATATAN"
-        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -151,6 +122,7 @@ Partial Class FormSiswa
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormSiswa"
         Me.Text = "FormSiswa"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -161,8 +133,6 @@ Partial Class FormSiswa
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
