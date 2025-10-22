@@ -103,6 +103,12 @@
     <Compile Include="FormLaporan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPengaturan.Designer.vb">
       <DependentUpon>FormPengaturan.vb</DependentUpon>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCatatan.resx">
       <DependentUpon>FormCatatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPengaturan.resx">
       <DependentUpon>FormPengaturan.vb</DependentUpon>
