@@ -1,11 +1,11 @@
 ﻿Public Class FormGuru
-    Private Sub LoadForm(childForm As Form)
+    Private Sub LoadForm(FormGuru As Form)
         Panel2.Controls.Clear() ' 
-        childForm.TopLevel = False
-        childForm.FormBorderStyle = FormBorderStyle.None
-        childForm.Dock = DockStyle.Fill
-        Panel2.Controls.Add(childForm)
-        childForm.Show()
+        FormGuru.TopLevel = False
+        FormGuru.FormBorderStyle = FormBorderStyle.None
+        FormGuru = DockStyle.Fill
+        Panel2.Controls.Add(FormGuru)
+        FormGuru.Show()
 
     End Sub
 
