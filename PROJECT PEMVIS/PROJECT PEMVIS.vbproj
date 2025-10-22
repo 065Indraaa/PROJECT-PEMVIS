@@ -92,6 +92,30 @@
     <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormCatatan.Designer.vb">
+      <DependentUpon>FormCatatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCatatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputNilai.Designer.vb">
+      <DependentUpon>FormInputNilai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputNilai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporan.Designer.vb">
+      <DependentUpon>FormLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengaturan.Designer.vb">
+      <DependentUpon>FormPengaturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengaturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -123,6 +147,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCatatan.resx">
+      <DependentUpon>FormCatatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengaturan.resx">
+      <DependentUpon>FormPengaturan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
