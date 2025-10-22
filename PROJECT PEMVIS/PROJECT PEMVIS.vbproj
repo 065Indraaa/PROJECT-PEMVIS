@@ -127,6 +127,12 @@
     <Compile Include="FormPengaturanNew.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSiswa.Designer.vb">
+      <DependentUpon>FormSiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPengaturanNew.resx">
       <DependentUpon>FormPengaturanNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSiswa.resx">
+      <DependentUpon>FormSiswa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
