@@ -73,18 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormCatatan.Designer.vb">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </Compile>
@@ -109,10 +97,10 @@
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPengaturan.Designer.vb">
-      <DependentUpon>FormPengaturan.vb</DependentUpon>
+    <Compile Include="FormPengaturanNew.Designer.vb">
+      <DependentUpon>FormPengaturanNew.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPengaturan.vb">
+    <Compile Include="FormPengaturanNew.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -130,37 +118,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="TesJajal.Designer.vb">
-      <DependentUpon>TesJajal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TesJajal.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormCatatan.resx">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPengaturan.resx">
-      <DependentUpon>FormPengaturan.vb</DependentUpon>
+    <EmbeddedResource Include="FormPengaturanNew.resx">
+      <DependentUpon>FormPengaturanNew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TesJajal.resx">
-      <DependentUpon>TesJajal.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
