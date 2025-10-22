@@ -28,7 +28,7 @@ Partial Class Tes_jajal
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(333, 98)
+        Me.Label1.Location = New System.Drawing.Point(350, 93)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 0
@@ -42,6 +42,7 @@ Partial Class Tes_jajal
         Me.Controls.Add(Me.Label1)
         Me.Name = "Tes_jajal"
         Me.Text = "Tes_jajal"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

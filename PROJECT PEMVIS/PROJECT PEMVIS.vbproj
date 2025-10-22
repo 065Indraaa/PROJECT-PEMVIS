@@ -110,7 +110,9 @@
     <Compile Include="Tes jajal.Designer.vb">
       <DependentUpon>Tes jajal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Tes jajal.vb" />
+    <Compile Include="Tes jajal.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
