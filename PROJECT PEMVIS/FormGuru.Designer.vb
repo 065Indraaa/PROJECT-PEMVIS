@@ -23,6 +23,7 @@ Partial Class FormGuru
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -30,6 +31,8 @@ Partial Class FormGuru
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -37,6 +40,7 @@ Partial Class FormGuru
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.MainPanel)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -47,6 +51,13 @@ Partial Class FormGuru
         Me.GroupBox1.Size = New System.Drawing.Size(212, 400)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'MainPanel
+        '
+        Me.MainPanel.Location = New System.Drawing.Point(211, 6)
+        Me.MainPanel.Name = "MainPanel"
+        Me.MainPanel.Size = New System.Drawing.Size(589, 394)
+        Me.MainPanel.TabIndex = 2
         '
         'Button6
         '
@@ -103,10 +114,13 @@ Partial Class FormGuru
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "ABSENSI"
         Me.Button1.UseVisualStyleBackColor = False
+        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
+        Me.GroupBox2.Controls.Add(Me.Panel2)
+        Me.GroupBox2.Controls.Add(Me.Panel1)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
@@ -140,6 +154,20 @@ Partial Class FormGuru
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(280, 103)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(520, 347)
+        Me.Panel1.TabIndex = 3
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(212, 49)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(588, 401)
+        Me.Panel2.TabIndex = 4
+        '
         'FormGuru
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -150,6 +178,7 @@ Partial Class FormGuru
         Me.Name = "FormGuru"
         Me.Text = "FormGuru"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        AddHandler Load, AddressOf Me.FormGuru_Load
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -165,4 +194,7 @@ Partial Class FormGuru
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
+    Friend WithEvents MainPanel As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class
