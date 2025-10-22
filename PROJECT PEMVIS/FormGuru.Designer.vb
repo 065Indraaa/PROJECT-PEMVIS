@@ -24,7 +24,6 @@ Partial Class FormGuru
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -39,7 +38,6 @@ Partial Class FormGuru
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
         Me.GroupBox1.Controls.Add(Me.Button6)
-        Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -49,7 +47,6 @@ Partial Class FormGuru
         Me.GroupBox1.Size = New System.Drawing.Size(212, 400)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
         '
         'Button6
         '
@@ -58,26 +55,12 @@ Partial Class FormGuru
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button6.Location = New System.Drawing.Point(0, 314)
+        Me.Button6.Location = New System.Drawing.Point(0, 278)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(212, 39)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "LAPORAN"
         Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.LightPink
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button4.Location = New System.Drawing.Point(0, 269)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(212, 39)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "CATATAN"
-        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -132,7 +115,6 @@ Partial Class FormGuru
         Me.GroupBox2.Size = New System.Drawing.Size(800, 50)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
         '
         'Label1
         '
@@ -178,7 +160,6 @@ Partial Class FormGuru
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox2 As GroupBox
