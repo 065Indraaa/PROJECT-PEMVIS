@@ -84,6 +84,12 @@
     <Compile Include="FormCatatan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormGuru.Designer.vb">
+      <DependentUpon>FormGuru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGuru.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormInputNilai.Designer.vb">
       <DependentUpon>FormInputNilai.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormCatatan.resx">
       <DependentUpon>FormCatatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuru.resx">
+      <DependentUpon>FormGuru.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLaporan.resx">
       <DependentUpon>FormLaporan.vb</DependentUpon>
