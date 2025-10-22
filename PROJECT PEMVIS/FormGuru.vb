@@ -2,11 +2,11 @@
 
     ' Method untuk menampilkan form di dalam panel
     Private Sub LoadForm(frm As Form)
-        Panel2.Controls.Clear()
+        PanelUtama.Controls.Clear()
         frm.TopLevel = False
         frm.FormBorderStyle = FormBorderStyle.None
         frm.Dock = DockStyle.Fill
-        Panel2.Controls.Add(frm)
+        PanelUtama.Controls.Add(frm)
         frm.Show()
     End Sub
 

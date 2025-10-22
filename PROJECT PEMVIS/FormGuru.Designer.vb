@@ -29,10 +29,11 @@ Partial Class FormGuru
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PanelUtama = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -119,6 +120,7 @@ Partial Class FormGuru
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
+        Me.GroupBox2.Controls.Add(Me.PanelUtama)
         Me.GroupBox2.Controls.Add(Me.Panel2)
         Me.GroupBox2.Controls.Add(Me.Panel1)
         Me.GroupBox2.Controls.Add(Me.Label1)
@@ -129,6 +131,20 @@ Partial Class FormGuru
         Me.GroupBox2.Size = New System.Drawing.Size(800, 50)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(212, 49)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(588, 401)
+        Me.Panel2.TabIndex = 4
+        '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(280, 103)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(520, 347)
+        Me.Panel1.TabIndex = 3
         '
         'Label1
         '
@@ -154,19 +170,12 @@ Partial Class FormGuru
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'PanelUtama
         '
-        Me.Panel1.Location = New System.Drawing.Point(280, 103)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(520, 347)
-        Me.Panel1.TabIndex = 3
-        '
-        'Panel2
-        '
-        Me.Panel2.Location = New System.Drawing.Point(212, 49)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(588, 401)
-        Me.Panel2.TabIndex = 4
+        Me.PanelUtama.Location = New System.Drawing.Point(210, 48)
+        Me.PanelUtama.Name = "PanelUtama"
+        Me.PanelUtama.Size = New System.Drawing.Size(590, 402)
+        Me.PanelUtama.TabIndex = 5
         '
         'FormGuru
         '
@@ -197,4 +206,5 @@ Partial Class FormGuru
     Friend WithEvents MainPanel As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelUtama As Panel
 End Class
