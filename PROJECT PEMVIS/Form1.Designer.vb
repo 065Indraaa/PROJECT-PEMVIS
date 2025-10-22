@@ -35,9 +35,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(-2, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(858, 443)
+        Me.GroupBox1.Size = New System.Drawing.Size(873, 456)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -77,7 +77,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(883, 468)
+        Me.ClientSize = New System.Drawing.Size(825, 443)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
