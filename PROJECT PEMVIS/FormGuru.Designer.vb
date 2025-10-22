@@ -14,23 +14,16 @@ Partial Class FormGuru
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PanelUtama = New System.Windows.Forms.Panel()
@@ -38,10 +31,9 @@ Partial Class FormGuru
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'GroupBox1 (Sidebar)
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
-        Me.GroupBox1.Controls.Add(Me.MainPanel)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -53,19 +45,12 @@ Partial Class FormGuru
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'MainPanel
-        '
-        Me.MainPanel.Location = New System.Drawing.Point(211, 6)
-        Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(589, 394)
-        Me.MainPanel.TabIndex = 2
-        '
-        'Button6
+        'Button6 - LAPORAN
         '
         Me.Button6.BackColor = System.Drawing.Color.LightPink
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Button6.Location = New System.Drawing.Point(0, 278)
         Me.Button6.Name = "Button6"
@@ -74,12 +59,12 @@ Partial Class FormGuru
         Me.Button6.Text = "LAPORAN"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Button3
+        'Button3 - JADWAL
         '
         Me.Button3.BackColor = System.Drawing.Color.LightPink
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Button3.Location = New System.Drawing.Point(0, 204)
         Me.Button3.Name = "Button3"
@@ -88,12 +73,12 @@ Partial Class FormGuru
         Me.Button3.Text = "JADWAL"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Button2 - NILAI
         '
         Me.Button2.BackColor = System.Drawing.Color.LightPink
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Button2.Location = New System.Drawing.Point(0, 159)
         Me.Button2.Name = "Button2"
@@ -102,12 +87,12 @@ Partial Class FormGuru
         Me.Button2.Text = "NILAI"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Button1 - ABSENSI
         '
         Me.Button1.BackColor = System.Drawing.Color.LightPink
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.Location = New System.Drawing.Point(0, 114)
         Me.Button1.Name = "Button1"
@@ -115,14 +100,10 @@ Partial Class FormGuru
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "ABSENSI"
         Me.Button1.UseVisualStyleBackColor = False
-        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
-        'GroupBox2
+        'GroupBox2 (Header)
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
-        Me.GroupBox2.Controls.Add(Me.PanelUtama)
-        Me.GroupBox2.Controls.Add(Me.Panel2)
-        Me.GroupBox2.Controls.Add(Me.Panel1)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
@@ -132,36 +113,22 @@ Partial Class FormGuru
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         '
-        'Panel2
-        '
-        Me.Panel2.Location = New System.Drawing.Point(212, 49)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(588, 401)
-        Me.Panel2.TabIndex = 4
-        '
-        'Panel1
-        '
-        Me.Panel1.Location = New System.Drawing.Point(280, 103)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(520, 347)
-        Me.Panel1.TabIndex = 3
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(345, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "SMA HARAPAN BANGSA"
         '
-        'Button5
+        'Button5 - Pengaturan
         '
         Me.Button5.BackColor = System.Drawing.Color.LightPink
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Button5.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Button5.Location = New System.Drawing.Point(6, 12)
         Me.Button5.Name = "Button5"
@@ -170,24 +137,25 @@ Partial Class FormGuru
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'PanelUtama
+        'PanelUtama (Main Content Panel)
         '
-        Me.PanelUtama.Location = New System.Drawing.Point(210, 48)
+        Me.PanelUtama.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelUtama.Location = New System.Drawing.Point(212, 50)
         Me.PanelUtama.Name = "PanelUtama"
-        Me.PanelUtama.Size = New System.Drawing.Size(590, 402)
-        Me.PanelUtama.TabIndex = 5
+        Me.PanelUtama.Size = New System.Drawing.Size(588, 400)
+        Me.PanelUtama.TabIndex = 2
         '
         'FormGuru
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PanelUtama)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormGuru"
         Me.Text = "FormGuru"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        AddHandler Load, AddressOf Me.FormGuru_Load
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -203,8 +171,6 @@ Partial Class FormGuru
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
-    Friend WithEvents MainPanel As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents PanelUtama As Panel
+
 End Class
