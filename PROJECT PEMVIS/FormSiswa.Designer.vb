@@ -24,12 +24,14 @@ Partial Class FormSiswa
     Private Sub InitializeComponent()
         Me.PanelUtama = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Pengaturan = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -45,6 +47,8 @@ Partial Class FormSiswa
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -55,6 +59,26 @@ Partial Class FormSiswa
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(38, 103)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(106, 15)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "X MULTIMEDIA 2"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(38, 84)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(138, 19)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Velisa Alya Quraini"
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.LightPink
@@ -62,7 +86,7 @@ Partial Class FormSiswa
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Location = New System.Drawing.Point(0, 183)
+        Me.Button3.Location = New System.Drawing.Point(0, 227)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(212, 39)
         Me.Button3.TabIndex = 3
@@ -76,7 +100,7 @@ Partial Class FormSiswa
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(0, 138)
+        Me.Button2.Location = New System.Drawing.Point(0, 182)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 39)
         Me.Button2.TabIndex = 2
@@ -90,7 +114,7 @@ Partial Class FormSiswa
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(0, 93)
+        Me.Button1.Location = New System.Drawing.Point(0, 137)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(212, 39)
         Me.Button1.TabIndex = 1
@@ -101,7 +125,7 @@ Partial Class FormSiswa
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.Pengaturan)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
@@ -119,19 +143,20 @@ Partial Class FormSiswa
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "SMA HARAPAN BANGSA"
         '
-        'Button5
+        'Pengaturan
         '
-        Me.Button5.BackColor = System.Drawing.Color.LightPink
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button5.Location = New System.Drawing.Point(6, 12)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(128, 33)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Pengaturan"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Pengaturan.BackColor = System.Drawing.Color.LightPink
+        Me.Pengaturan.FlatAppearance.BorderSize = 0
+        Me.Pengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Pengaturan.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Pengaturan.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Pengaturan.Location = New System.Drawing.Point(6, 12)
+        Me.Pengaturan.Name = "Pengaturan"
+        Me.Pengaturan.Size = New System.Drawing.Size(128, 33)
+        Me.Pengaturan.TabIndex = 2
+        Me.Pengaturan.Text = "Pengaturan"
+        Me.Pengaturan.UseVisualStyleBackColor = False
+        AddHandler Me.Pengaturan.Click, AddressOf Me.Button5_Click
         '
         'FormSiswa
         '
@@ -144,6 +169,7 @@ Partial Class FormSiswa
         Me.Name = "FormSiswa"
         Me.Text = "FormSiswa"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -157,5 +183,7 @@ Partial Class FormSiswa
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button5 As Button
+    Friend WithEvents Pengaturan As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class

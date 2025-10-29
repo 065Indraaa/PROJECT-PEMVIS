@@ -19,6 +19,8 @@ Partial Class FormGuru
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -34,6 +36,8 @@ Partial Class FormGuru
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -45,6 +49,26 @@ Partial Class FormGuru
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(27, 101)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(129, 15)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Administrasi Jaringan"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(27, 82)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(162, 19)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Indra Bachtiar Zakaria"
+        '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.LightPink
@@ -52,7 +76,7 @@ Partial Class FormGuru
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button6.Location = New System.Drawing.Point(0, 255)
+        Me.Button6.Location = New System.Drawing.Point(0, 293)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(212, 39)
         Me.Button6.TabIndex = 5
@@ -66,7 +90,7 @@ Partial Class FormGuru
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Location = New System.Drawing.Point(0, 181)
+        Me.Button3.Location = New System.Drawing.Point(0, 219)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(212, 39)
         Me.Button3.TabIndex = 3
@@ -80,7 +104,7 @@ Partial Class FormGuru
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(0, 136)
+        Me.Button2.Location = New System.Drawing.Point(0, 174)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 39)
         Me.Button2.TabIndex = 2
@@ -94,7 +118,7 @@ Partial Class FormGuru
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(0, 91)
+        Me.Button1.Location = New System.Drawing.Point(0, 129)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(212, 39)
         Me.Button1.TabIndex = 1
@@ -155,8 +179,8 @@ Partial Class FormGuru
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormGuru"
         Me.Text = "FormGuru"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -172,5 +196,6 @@ Partial Class FormGuru
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents PanelUtama As Panel
-
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class
