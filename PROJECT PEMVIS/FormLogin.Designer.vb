@@ -71,6 +71,7 @@ Partial Class FormLogin
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "MASUK"
         Me.Button1.UseVisualStyleBackColor = True
+        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
         'TextBox2
         '
@@ -120,7 +121,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FormLogin"
         Me.Text = "FormLogin"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        AddHandler Load, AddressOf Me.FormLogin_Load
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
