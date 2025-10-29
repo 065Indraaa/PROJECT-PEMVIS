@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormSiswa
+Partial Class FormAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,6 +24,8 @@ Partial Class FormSiswa
     Private Sub InitializeComponent()
         Me.PanelUtama = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -45,6 +47,8 @@ Partial Class FormSiswa
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -54,6 +58,34 @@ Partial Class FormSiswa
         Me.GroupBox1.Size = New System.Drawing.Size(212, 491)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.LightPink
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Button4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button4.Location = New System.Drawing.Point(0, 302)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(212, 39)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "JADWAL"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.LightPink
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button6.Location = New System.Drawing.Point(0, 257)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(212, 39)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "MAPEL"
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -66,7 +98,7 @@ Partial Class FormSiswa
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(212, 39)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "JADWAL"
+        Me.Button3.Text = "DATA GURU"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -80,7 +112,7 @@ Partial Class FormSiswa
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 39)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "NILAI"
+        Me.Button2.Text = "DATA SISWA"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -94,7 +126,7 @@ Partial Class FormSiswa
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(212, 39)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "ABSENSI"
+        Me.Button1.Text = "DATA KELAS"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'GroupBox2
@@ -113,7 +145,7 @@ Partial Class FormSiswa
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(451, 16)
+        Me.Label1.Location = New System.Drawing.Point(436, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 2
@@ -133,7 +165,7 @@ Partial Class FormSiswa
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'FormSiswa
+        'FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -141,8 +173,8 @@ Partial Class FormSiswa
         Me.Controls.Add(Me.PanelUtama)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Name = "FormSiswa"
-        Me.Text = "FormSiswa"
+        Me.Name = "FormAdmin"
+        Me.Text = "FormAdmin"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -152,6 +184,8 @@ Partial Class FormSiswa
 
     Friend WithEvents PanelUtama As Panel
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button6 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button

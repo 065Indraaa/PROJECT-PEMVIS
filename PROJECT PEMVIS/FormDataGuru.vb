@@ -6,4 +6,12 @@
     Private Sub Label6_Click()
 
     End Sub
+
+    Private Sub Button1_Click()
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged()
+
+    End Sub
 End Class
