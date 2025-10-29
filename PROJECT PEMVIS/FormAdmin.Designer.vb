@@ -175,6 +175,7 @@ Partial Class FormAdmin
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormAdmin"
         Me.Text = "FormAdmin"
+        AddHandler Load, AddressOf Me.FormAdmin_Load
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
