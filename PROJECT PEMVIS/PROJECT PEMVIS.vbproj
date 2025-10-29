@@ -94,6 +94,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataKelas.Designer.vb">
+      <DependentUpon>DataKelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataKelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.vb">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackupRestore.Designer.vb">
+      <DependentUpon>FormBackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackupRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormCatatan.Designer.vb">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </Compile>
@@ -131,7 +149,11 @@
     <Compile Include="FormPengaturanNew.Designer.vb">
       <DependentUpon>FormPengaturanNew.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPengaturanNew.vb">
+    <Compile Include="FormPengaturanNew.vb" />
+    <Compile Include="FormPrintPreview.Designer.vb">
+      <DependentUpon>FormPrintPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintPreview.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSiswa.Designer.vb">
@@ -158,6 +180,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DataKelas.resx">
+      <DependentUpon>DataKelas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackupRestore.resx">
+      <DependentUpon>FormBackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCatatan.resx">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPengaturanNew.resx">
       <DependentUpon>FormPengaturanNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintPreview.resx">
+      <DependentUpon>FormPrintPreview.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSiswa.resx">
       <DependentUpon>FormSiswa.vb</DependentUpon>
