@@ -106,6 +106,12 @@
     <Compile Include="FormAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormBackupRestore.Designer.vb">
+      <DependentUpon>FormBackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackupRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormCatatan.Designer.vb">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </Compile>
@@ -116,6 +122,12 @@
       <DependentUpon>FormDataGuru.vb</DependentUpon>
     </Compile>
     <Compile Include="FormDataGuru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataMapel.Designer.vb">
+      <DependentUpon>FormDataMapel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataMapel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGuru.Designer.vb">
@@ -144,6 +156,12 @@
       <DependentUpon>FormPengaturanNew.vb</DependentUpon>
     </Compile>
     <Compile Include="FormPengaturanNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrintPreview.Designer.vb">
+      <DependentUpon>FormPrintPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintPreview.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSiswa.Designer.vb">
@@ -176,11 +194,17 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBackupRestore.resx">
+      <DependentUpon>FormBackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCatatan.resx">
       <DependentUpon>FormCatatan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataGuru.resx">
       <DependentUpon>FormDataGuru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataMapel.resx">
+      <DependentUpon>FormDataMapel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGuru.resx">
       <DependentUpon>FormGuru.vb</DependentUpon>
@@ -196,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPengaturanNew.resx">
       <DependentUpon>FormPengaturanNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintPreview.resx">
+      <DependentUpon>FormPrintPreview.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSiswa.resx">
       <DependentUpon>FormSiswa.vb</DependentUpon>
