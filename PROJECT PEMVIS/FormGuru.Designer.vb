@@ -155,7 +155,6 @@ Partial Class FormGuru
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormGuru"
         Me.Text = "FormGuru"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

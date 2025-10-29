@@ -43,6 +43,7 @@ Partial Class FormAdmin
         Me.PanelUtama.Name = "PanelUtama"
         Me.PanelUtama.Size = New System.Drawing.Size(821, 491)
         Me.PanelUtama.TabIndex = 5
+        AddHandler Me.PanelUtama.Paint, AddressOf Me.PanelUtama_Paint
         '
         'GroupBox1
         '
@@ -86,6 +87,7 @@ Partial Class FormAdmin
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "MAPEL"
         Me.Button6.UseVisualStyleBackColor = False
+        AddHandler Me.Button6.Click, AddressOf Me.Button6_Click
         '
         'Button3
         '
@@ -100,6 +102,7 @@ Partial Class FormAdmin
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "DATA GURU"
         Me.Button3.UseVisualStyleBackColor = False
+        AddHandler Me.Button3.Click, AddressOf Me.Button3_Click
         '
         'Button2
         '
@@ -175,11 +178,16 @@ Partial Class FormAdmin
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormAdmin"
         Me.Text = "FormAdmin"
+        AddHandler Load, AddressOf Me.FormAdmin_Load
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
+    End Sub
+
+    Private Sub PanelUtama_Paint(sender As Object, e As PaintEventArgs)
+        Throw New NotImplementedException()
     End Sub
 
     Friend WithEvents PanelUtama As Panel

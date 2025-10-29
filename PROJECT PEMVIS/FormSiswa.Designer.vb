@@ -29,7 +29,7 @@ Partial Class FormSiswa
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Pengaturan = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -101,7 +101,7 @@ Partial Class FormSiswa
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.Pengaturan)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
@@ -119,19 +119,20 @@ Partial Class FormSiswa
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "SMA HARAPAN BANGSA"
         '
-        'Button5
+        'Pengaturan
         '
-        Me.Button5.BackColor = System.Drawing.Color.LightPink
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button5.Location = New System.Drawing.Point(6, 12)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(128, 33)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Pengaturan"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Pengaturan.BackColor = System.Drawing.Color.LightPink
+        Me.Pengaturan.FlatAppearance.BorderSize = 0
+        Me.Pengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Pengaturan.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Pengaturan.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Pengaturan.Location = New System.Drawing.Point(6, 12)
+        Me.Pengaturan.Name = "Pengaturan"
+        Me.Pengaturan.Size = New System.Drawing.Size(128, 33)
+        Me.Pengaturan.TabIndex = 2
+        Me.Pengaturan.Text = "Pengaturan"
+        Me.Pengaturan.UseVisualStyleBackColor = False
+        AddHandler Me.Pengaturan.Click, AddressOf Me.Button5_Click
         '
         'FormSiswa
         '
@@ -157,5 +158,5 @@ Partial Class FormSiswa
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button5 As Button
+    Friend WithEvents Pengaturan As Button
 End Class
