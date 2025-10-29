@@ -53,9 +53,9 @@ Partial Class FormCatatan
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(9, 8)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(575, 68)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -85,9 +85,9 @@ Partial Class FormCatatan
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Location = New System.Drawing.Point(9, 81)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(205, 250)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
@@ -95,7 +95,7 @@ Partial Class FormCatatan
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(107, 203)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(64, 32)
         Me.Button2.TabIndex = 9
@@ -105,7 +105,7 @@ Partial Class FormCatatan
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(21, 203)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(65, 32)
         Me.Button1.TabIndex = 8
@@ -115,7 +115,7 @@ Partial Class FormCatatan
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(7, 110)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(179, 75)
@@ -135,7 +135,7 @@ Partial Class FormCatatan
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(51, 64)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(135, 20)
         Me.DateTimePicker1.TabIndex = 5
@@ -144,7 +144,7 @@ Partial Class FormCatatan
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(51, 42)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(135, 21)
         Me.ComboBox2.TabIndex = 4
@@ -153,7 +153,7 @@ Partial Class FormCatatan
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(51, 17)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
         Me.ComboBox1.TabIndex = 3
@@ -193,7 +193,7 @@ Partial Class FormCatatan
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.tanggal, Me.idguru, Me.isicatatan})
         Me.DataGridView1.Location = New System.Drawing.Point(217, 131)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
@@ -233,9 +233,9 @@ Partial Class FormCatatan
         Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Location = New System.Drawing.Point(217, 81)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Size = New System.Drawing.Size(366, 47)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
@@ -247,9 +247,9 @@ Partial Class FormCatatan
         Me.Label6.Location = New System.Drawing.Point(91, 10)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(187, 26)
+        Me.Label6.Size = New System.Drawing.Size(189, 26)
         Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Riwayat Catatan"
+        Me.Label6.Text = "Riwayat Absensi"
         '
         'FormCatatan
         '
@@ -261,10 +261,9 @@ Partial Class FormCatatan
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormCatatan"
         Me.Text = "FormBackupRestore"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

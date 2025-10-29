@@ -32,6 +32,8 @@ Partial Class FormAdmin
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -43,10 +45,13 @@ Partial Class FormAdmin
         Me.PanelUtama.Name = "PanelUtama"
         Me.PanelUtama.Size = New System.Drawing.Size(821, 491)
         Me.PanelUtama.TabIndex = 5
+        AddHandler Me.PanelUtama.Paint, AddressOf Me.PanelUtama_Paint
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button3)
@@ -66,7 +71,7 @@ Partial Class FormAdmin
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button4.Location = New System.Drawing.Point(0, 302)
+        Me.Button4.Location = New System.Drawing.Point(0, 340)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(212, 39)
         Me.Button4.TabIndex = 6
@@ -80,12 +85,13 @@ Partial Class FormAdmin
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button6.Location = New System.Drawing.Point(0, 257)
+        Me.Button6.Location = New System.Drawing.Point(0, 295)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(212, 39)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "MAPEL"
         Me.Button6.UseVisualStyleBackColor = False
+        AddHandler Me.Button6.Click, AddressOf Me.Button6_Click
         '
         'Button3
         '
@@ -94,12 +100,13 @@ Partial Class FormAdmin
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Location = New System.Drawing.Point(0, 183)
+        Me.Button3.Location = New System.Drawing.Point(0, 221)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(212, 39)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "DATA GURU"
         Me.Button3.UseVisualStyleBackColor = False
+        AddHandler Me.Button3.Click, AddressOf Me.Button3_Click
         '
         'Button2
         '
@@ -108,7 +115,7 @@ Partial Class FormAdmin
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(0, 138)
+        Me.Button2.Location = New System.Drawing.Point(0, 176)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 39)
         Me.Button2.TabIndex = 2
@@ -122,7 +129,7 @@ Partial Class FormAdmin
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(0, 93)
+        Me.Button1.Location = New System.Drawing.Point(0, 131)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(212, 39)
         Me.Button1.TabIndex = 1
@@ -165,6 +172,26 @@ Partial Class FormAdmin
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(35, 84)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(121, 19)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Aziza Damayanti"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(35, 103)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 19)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Admin 1"
+        '
         'FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -177,10 +204,15 @@ Partial Class FormAdmin
         Me.Text = "FormAdmin"
         AddHandler Load, AddressOf Me.FormAdmin_Load
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
+    End Sub
+
+    Private Sub PanelUtama_Paint(sender As Object, e As PaintEventArgs)
+        Throw New NotImplementedException()
     End Sub
 
     Friend WithEvents PanelUtama As Panel
@@ -193,4 +225,6 @@ Partial Class FormAdmin
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class
