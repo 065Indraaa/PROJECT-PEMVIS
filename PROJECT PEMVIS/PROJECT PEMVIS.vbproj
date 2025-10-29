@@ -94,6 +94,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataKelas.Designer.vb">
+      <DependentUpon>DataKelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataKelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormAdmin.Designer.vb">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DataKelas.resx">
+      <DependentUpon>DataKelas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </EmbeddedResource>

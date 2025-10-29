@@ -41,7 +41,7 @@ Partial Class FormAdmin
         Me.PanelUtama.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelUtama.Location = New System.Drawing.Point(212, 50)
         Me.PanelUtama.Name = "PanelUtama"
-        Me.PanelUtama.Size = New System.Drawing.Size(876, 488)
+        Me.PanelUtama.Size = New System.Drawing.Size(821, 491)
         Me.PanelUtama.TabIndex = 5
         '
         'GroupBox1
@@ -55,7 +55,7 @@ Partial Class FormAdmin
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox1.Location = New System.Drawing.Point(0, 50)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(212, 488)
+        Me.GroupBox1.Size = New System.Drawing.Size(212, 491)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
@@ -137,7 +137,7 @@ Partial Class FormAdmin
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1088, 50)
+        Me.GroupBox2.Size = New System.Drawing.Size(1033, 50)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         '
@@ -169,7 +169,7 @@ Partial Class FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1088, 538)
+        Me.ClientSize = New System.Drawing.Size(1033, 541)
         Me.Controls.Add(Me.PanelUtama)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
