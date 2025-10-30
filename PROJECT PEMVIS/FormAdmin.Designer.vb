@@ -68,7 +68,7 @@ Partial Class FormAdmin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(35, 103)
+        Me.Label3.Location = New System.Drawing.Point(82, 16)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 15)
         Me.Label3.TabIndex = 8
@@ -78,7 +78,7 @@ Partial Class FormAdmin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(35, 84)
+        Me.Label2.Location = New System.Drawing.Point(42, 87)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(121, 19)
         Me.Label2.TabIndex = 7

@@ -103,7 +103,9 @@
     <Compile Include="FormAdmin.Designer.vb">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormAdmin.vb" />
+    <Compile Include="FormAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormBackupRestore.Designer.vb">
       <DependentUpon>FormBackupRestore.vb</DependentUpon>
     </Compile>
@@ -140,6 +142,12 @@
     <Compile Include="FormInputNilai.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormJadwal.Designer.vb">
+      <DependentUpon>FormJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLaporan.Designer.vb">
       <DependentUpon>FormLaporan.vb</DependentUpon>
     </Compile>
@@ -165,9 +173,7 @@
     <Compile Include="FormSiswa.Designer.vb">
       <DependentUpon>FormSiswa.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSiswa.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormSiswa.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInputNilai.resx">
       <DependentUpon>FormInputNilai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJadwal.resx">
+      <DependentUpon>FormJadwal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLaporan.resx">
       <DependentUpon>FormLaporan.vb</DependentUpon>

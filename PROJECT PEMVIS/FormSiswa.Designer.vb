@@ -63,7 +63,7 @@ Partial Class FormSiswa
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(38, 103)
+        Me.Label3.Location = New System.Drawing.Point(50, 16)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 15)
         Me.Label3.TabIndex = 9
@@ -73,7 +73,7 @@ Partial Class FormSiswa
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(38, 84)
+        Me.Label2.Location = New System.Drawing.Point(37, 94)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(138, 19)
         Me.Label2.TabIndex = 8
