@@ -103,9 +103,7 @@
     <Compile Include="FormAdmin.Designer.vb">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormAdmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormAdmin.vb" />
     <Compile Include="FormBackupRestore.Designer.vb">
       <DependentUpon>FormBackupRestore.vb</DependentUpon>
     </Compile>
