@@ -170,7 +170,6 @@ Partial Class DataKelas
         Me.GroupBox1.Size = New System.Drawing.Size(280, 353)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
         '
         'DataKelas
         '
