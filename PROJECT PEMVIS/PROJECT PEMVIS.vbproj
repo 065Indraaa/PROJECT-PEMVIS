@@ -173,7 +173,9 @@
     <Compile Include="FormSiswa.Designer.vb">
       <DependentUpon>FormSiswa.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSiswa.vb" />
+    <Compile Include="FormSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
