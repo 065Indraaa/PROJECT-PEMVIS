@@ -29,13 +29,16 @@ Partial Class FormGuru
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PanelUtama = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button6)
@@ -63,7 +66,7 @@ Partial Class FormGuru
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(27, 82)
+        Me.Label2.Location = New System.Drawing.Point(28, 92)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(162, 19)
         Me.Label2.TabIndex = 6
@@ -169,6 +172,15 @@ Partial Class FormGuru
         Me.PanelUtama.Size = New System.Drawing.Size(821, 491)
         Me.PanelUtama.TabIndex = 2
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(76, 34)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 55)
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        AddHandler Me.PictureBox1.Click, AddressOf Me.PictureBox1_Click
+        '
         'FormGuru
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,6 +195,7 @@ Partial Class FormGuru
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -198,4 +211,5 @@ Partial Class FormGuru
     Friend WithEvents PanelUtama As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
