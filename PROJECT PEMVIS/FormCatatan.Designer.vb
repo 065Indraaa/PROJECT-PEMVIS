@@ -289,10 +289,6 @@ Partial Class FormCatatan
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents no As DataGridViewTextBoxColumn
-    Friend WithEvents tanggal As DataGridViewTextBoxColumn
-    Friend WithEvents idguru As DataGridViewTextBoxColumn
-    Friend WithEvents isicatatan As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label6 As Label
 End Class
