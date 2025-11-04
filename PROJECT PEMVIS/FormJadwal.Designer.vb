@@ -52,34 +52,34 @@ Partial Class FormJadwal
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(2, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(677, 351)
+        Me.GroupBox1.Size = New System.Drawing.Size(770, 386)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(242, 280)
+        Me.TextBox4.Location = New System.Drawing.Point(274, 277)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(169, 26)
         Me.TextBox4.TabIndex = 10
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(242, 240)
+        Me.TextBox3.Location = New System.Drawing.Point(274, 232)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(169, 26)
         Me.TextBox3.TabIndex = 9
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(242, 197)
+        Me.TextBox2.Location = New System.Drawing.Point(274, 200)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(169, 26)
         Me.TextBox2.TabIndex = 8
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(242, 163)
+        Me.TextBox1.Location = New System.Drawing.Point(274, 160)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(169, 26)
         Me.TextBox1.TabIndex = 7
@@ -89,7 +89,7 @@ Partial Class FormJadwal
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Senin", "Selasa ", "Rabu ", "Kamis ", "Jumat"})
-        Me.ListBox1.Location = New System.Drawing.Point(242, 115)
+        Me.ListBox1.Location = New System.Drawing.Point(274, 115)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(169, 24)
         Me.ListBox1.TabIndex = 6
@@ -97,7 +97,7 @@ Partial Class FormJadwal
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(82, 283)
+        Me.Label6.Location = New System.Drawing.Point(92, 280)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 20)
         Me.Label6.TabIndex = 5
@@ -106,7 +106,7 @@ Partial Class FormJadwal
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(82, 246)
+        Me.Label5.Location = New System.Drawing.Point(92, 238)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 20)
         Me.Label5.TabIndex = 4
@@ -115,7 +115,7 @@ Partial Class FormJadwal
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(82, 203)
+        Me.Label4.Location = New System.Drawing.Point(92, 203)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(45, 20)
         Me.Label4.TabIndex = 3
@@ -125,7 +125,7 @@ Partial Class FormJadwal
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(82, 166)
+        Me.Label3.Location = New System.Drawing.Point(92, 160)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 20)
         Me.Label3.TabIndex = 2
@@ -134,7 +134,7 @@ Partial Class FormJadwal
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(82, 115)
+        Me.Label2.Location = New System.Drawing.Point(92, 115)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 20)
         Me.Label2.TabIndex = 1
@@ -144,17 +144,18 @@ Partial Class FormJadwal
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(175, 22)
+        Me.Label1.Location = New System.Drawing.Point(228, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(309, 37)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "JADWAL SEKOLAH"
+        AddHandler Me.Label1.Click, AddressOf Me.Label1_Click
         '
         'FormJadwal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(680, 348)
+        Me.ClientSize = New System.Drawing.Size(784, 399)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FormJadwal"
         Me.Text = "FormJadwal"

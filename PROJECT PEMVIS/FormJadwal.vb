@@ -6,4 +6,8 @@
     Private Sub FormJadwal_Load()
 
     End Sub
+
+    Private Sub Label1_Click()
+
+    End Sub
 End Class
