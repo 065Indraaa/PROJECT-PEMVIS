@@ -183,7 +183,7 @@ Partial Class FormLaporan
         Me.ReportViewer1.LocalReport.ReportPath = "Report1.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        'Me.ReportViewer1.ServerReport.BearerToken = Nothing'
         Me.ReportViewer1.Size = New System.Drawing.Size(396, 246)
         Me.ReportViewer1.TabIndex = 0
         '

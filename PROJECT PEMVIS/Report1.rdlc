@@ -183,6 +183,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -300,7 +301,7 @@
         <Top>0.42306cm</Top>
         <Left>0.30551cm</Left>
         <Height>1.2cm</Height>
-        <Width>19.43333cm</Width>
+        <Width>19.43334cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -404,7 +405,11 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Dicetak pada: </Value>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=Globals!TotalPages</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -433,7 +438,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=Globals!ExecutionTime</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -441,8 +446,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>15.78301cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>0.30551cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>1</ZIndex>

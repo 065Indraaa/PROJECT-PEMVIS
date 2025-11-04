@@ -26,7 +26,7 @@ Partial Class FormPrintPreview
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.SuspendLayout()
         '
         'PrintPreviewDialog1
@@ -43,23 +43,26 @@ Partial Class FormPrintPreview
         '
         Me.PrintDialog1.UseEXDialog = True
         '
-        'Button1
+        'ReportViewer1
         '
-        Me.Button1.Location = New System.Drawing.Point(713, 415)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        'Me.ReportViewer1.ServerReport.BearerToken = Nothing'
+        Me.ReportViewer1.Size = New System.Drawing.Size(1200, 692)
+        Me.ReportViewer1.TabIndex = 1
+        'AddHandler Me.ReportViewer1.Load, AddressOf Me.ReportViewer1_Load
         '
         'FormPrintPreview
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1200, 692)
+        Me.Controls.Add(Me.ReportViewer1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormPrintPreview"
         Me.Text = "FormPrintPreview"
+        AddHandler Load, AddressOf Me.FormPrintPreview_Load
         Me.ResumeLayout(False)
 
     End Sub
@@ -67,5 +70,5 @@ Partial Class FormPrintPreview
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDialog1 As PrintDialog
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class
