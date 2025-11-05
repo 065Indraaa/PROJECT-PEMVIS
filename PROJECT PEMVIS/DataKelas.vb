@@ -6,4 +6,8 @@
     Private Sub Label2_Click()
 
     End Sub
+
+    Private Sub DataGridView1_CellContentClick()
+
+    End Sub
 End Class

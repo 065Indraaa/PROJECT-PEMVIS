@@ -24,10 +24,6 @@ Partial Class FormDataMapel
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.KodePelajaran = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaPelajaran = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Semester = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Kelas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -44,12 +40,21 @@ Partial Class FormDataMapel
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.KodePelajaran = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaPelajaran = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaGuru = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Semester = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Kelas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
@@ -76,32 +81,12 @@ Partial Class FormDataMapel
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodePelajaran, Me.NamaPelajaran, Me.Semester, Me.Kelas})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodePelajaran, Me.NamaPelajaran, Me.NamaGuru, Me.Semester, Me.Kelas})
         Me.DataGridView1.Location = New System.Drawing.Point(37, 302)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(791, 165)
         Me.DataGridView1.TabIndex = 16
-        '
-        'KodePelajaran
-        '
-        Me.KodePelajaran.HeaderText = "KodePelajaran"
-        Me.KodePelajaran.Name = "KodePelajaran"
-        '
-        'NamaPelajaran
-        '
-        Me.NamaPelajaran.HeaderText = "NamaPelajaran"
-        Me.NamaPelajaran.Name = "NamaPelajaran"
-        '
-        'Semester
-        '
-        Me.Semester.HeaderText = "Semester"
-        Me.Semester.Name = "Semester"
-        '
-        'Kelas
-        '
-        Me.Kelas.HeaderText = "Kelas"
-        Me.Kelas.Name = "Kelas"
         '
         'Button6
         '
@@ -166,14 +151,14 @@ Partial Class FormDataMapel
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(159, 185)
+        Me.TextBox4.Location = New System.Drawing.Point(159, 215)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(168, 26)
         Me.TextBox4.TabIndex = 8
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(159, 154)
+        Me.TextBox3.Location = New System.Drawing.Point(159, 184)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(168, 26)
         Me.TextBox3.TabIndex = 7
@@ -195,7 +180,7 @@ Partial Class FormDataMapel
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(25, 191)
+        Me.Label5.Location = New System.Drawing.Point(25, 221)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 20)
         Me.Label5.TabIndex = 4
@@ -204,7 +189,7 @@ Partial Class FormDataMapel
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 160)
+        Me.Label4.Location = New System.Drawing.Point(25, 190)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 20)
         Me.Label4.TabIndex = 3
@@ -238,6 +223,48 @@ Partial Class FormDataMapel
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DATA PELAJARAN"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(25, 159)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(91, 20)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "Nama Guru"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(159, 151)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(168, 28)
+        Me.ComboBox1.TabIndex = 18
+        '
+        'KodePelajaran
+        '
+        Me.KodePelajaran.HeaderText = "KodePelajaran"
+        Me.KodePelajaran.Name = "KodePelajaran"
+        '
+        'NamaPelajaran
+        '
+        Me.NamaPelajaran.HeaderText = "NamaPelajaran"
+        Me.NamaPelajaran.Name = "NamaPelajaran"
+        '
+        'NamaGuru
+        '
+        Me.NamaGuru.HeaderText = "NamaGuru"
+        Me.NamaGuru.Name = "NamaGuru"
+        '
+        'Semester
+        '
+        Me.Semester.HeaderText = "Semester"
+        Me.Semester.Name = "Semester"
+        '
+        'Kelas
+        '
+        Me.Kelas.HeaderText = "Kelas"
+        Me.Kelas.Name = "Kelas"
+        '
         'FormDataMapel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -268,11 +295,14 @@ Partial Class FormDataMapel
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents KodePelajaran As DataGridViewTextBoxColumn
-    Friend WithEvents NamaPelajaran As DataGridViewTextBoxColumn
-    Friend WithEvents Semester As DataGridViewTextBoxColumn
-    Friend WithEvents Kelas As DataGridViewTextBoxColumn
     Friend WithEvents Button6 As Button
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Button5 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents KodePelajaran As DataGridViewTextBoxColumn
+    Friend WithEvents NamaPelajaran As DataGridViewTextBoxColumn
+    Friend WithEvents NamaGuru As DataGridViewTextBoxColumn
+    Friend WithEvents Semester As DataGridViewTextBoxColumn
+    Friend WithEvents Kelas As DataGridViewTextBoxColumn
 End Class

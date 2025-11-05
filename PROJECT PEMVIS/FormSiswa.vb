@@ -11,4 +11,8 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs)
         LoadForm(New FormPengaturanNew())
     End Sub
+
+    Private Sub Label1_Click()
+
+    End Sub
 End Class

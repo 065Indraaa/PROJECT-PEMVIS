@@ -2,4 +2,8 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Button3_Click()
+
+    End Sub
 End Class

@@ -10,4 +10,12 @@
     Private Sub Label8_Click()
 
     End Sub
+
+    Private Sub GroupBox1_Enter()
+
+    End Sub
+
+    Private Sub Button1_Click()
+
+    End Sub
 End Class

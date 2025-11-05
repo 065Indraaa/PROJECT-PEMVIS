@@ -19,4 +19,8 @@
     Private Sub Button6_Click()
         LoadForm(New FormDataMapel())
     End Sub
+
+    Private Sub Label1_Click()
+
+    End Sub
 End Class
