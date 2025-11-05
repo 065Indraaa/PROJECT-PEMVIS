@@ -43,7 +43,7 @@ Partial Class FormSiswa
         Me.PanelUtama.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelUtama.Location = New System.Drawing.Point(212, 50)
         Me.PanelUtama.Name = "PanelUtama"
-        Me.PanelUtama.Size = New System.Drawing.Size(692, 421)
+        Me.PanelUtama.Size = New System.Drawing.Size(622, 361)
         Me.PanelUtama.TabIndex = 5
         '
         'GroupBox1
@@ -58,7 +58,7 @@ Partial Class FormSiswa
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox1.Location = New System.Drawing.Point(0, 50)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(212, 421)
+        Me.GroupBox1.Size = New System.Drawing.Size(212, 361)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
@@ -140,7 +140,7 @@ Partial Class FormSiswa
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(904, 50)
+        Me.GroupBox2.Size = New System.Drawing.Size(834, 50)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         '
@@ -148,7 +148,7 @@ Partial Class FormSiswa
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(451, 16)
+        Me.Label1.Location = New System.Drawing.Point(380, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 2
@@ -173,7 +173,7 @@ Partial Class FormSiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(904, 471)
+        Me.ClientSize = New System.Drawing.Size(834, 411)
         Me.Controls.Add(Me.PanelUtama)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
