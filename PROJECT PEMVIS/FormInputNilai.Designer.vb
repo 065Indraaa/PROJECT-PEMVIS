@@ -74,6 +74,7 @@ Partial Class FormInputNilai
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.MistyRose
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.TextBox10)
@@ -101,9 +102,11 @@ Partial Class FormInputNilai
         Me.GroupBox1.Size = New System.Drawing.Size(917, 534)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        AddHandler Me.GroupBox1.Enter, AddressOf Me.GroupBox1_Enter
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nama, Me.NIS, Me.Kelas, Me.Semester, Me.MataPelajaran, Me.NilaiPengetahuan, Me.NilaiKeterampilan, Me.Kehadiran})
         Me.DataGridView1.Location = New System.Drawing.Point(404, 290)
@@ -154,12 +157,13 @@ Partial Class FormInputNilai
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.Color.RosyBrown
         Me.Button6.Location = New System.Drawing.Point(656, 429)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 28)
         Me.Button6.TabIndex = 21
         Me.Button6.Text = "Cari"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'TextBox10
         '
@@ -170,51 +174,58 @@ Partial Class FormInputNilai
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.Color.RosyBrown
         Me.Button5.Location = New System.Drawing.Point(795, 482)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 35)
         Me.Button5.TabIndex = 19
         Me.Button5.Text = "Close"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.Color.RosyBrown
         Me.Button4.Location = New System.Drawing.Point(689, 482)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 35)
         Me.Button4.TabIndex = 18
         Me.Button4.Text = "Hapus"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.RosyBrown
         Me.Button3.Location = New System.Drawing.Point(795, 247)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 34)
         Me.Button3.TabIndex = 17
         Me.Button3.Text = "Cancel"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.RosyBrown
         Me.Button2.Location = New System.Drawing.Point(705, 247)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 34)
         Me.Button2.TabIndex = 16
         Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.RosyBrown
         Me.Button1.Location = New System.Drawing.Point(609, 247)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 33)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
+        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
         'GroupBox5
         '
+        Me.GroupBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox5.Controls.Add(Me.CheckBox4)
         Me.GroupBox5.Controls.Add(Me.CheckBox3)
         Me.GroupBox5.Controls.Add(Me.CheckBox2)
@@ -268,6 +279,7 @@ Partial Class FormInputNilai
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.TextBox9)
         Me.GroupBox3.Controls.Add(Me.TextBox8)
         Me.GroupBox3.Controls.Add(Me.Label10)
@@ -313,6 +325,7 @@ Partial Class FormInputNilai
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.TextBox7)
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.Label8)
@@ -442,10 +455,10 @@ Partial Class FormInputNilai
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(295, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(296, 37)
+        Me.Label1.Size = New System.Drawing.Size(381, 46)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TABEL PENILAIAN"
         '
