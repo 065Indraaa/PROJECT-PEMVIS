@@ -153,6 +153,7 @@ Partial Class FormSiswa
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "SMA HARAPAN BANGSA"
+        AddHandler Me.Label1.Click, AddressOf Me.Label1_Click
         '
         'Pengaturan
         '

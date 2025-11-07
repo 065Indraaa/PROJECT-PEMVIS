@@ -1,4 +1,4 @@
-﻿Public Class FormGuru
+Public Class FormGuru
 
     Private Sub LoadForm(frm As Form)
         PanelUtama.Controls.Clear()

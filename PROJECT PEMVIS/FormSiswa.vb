@@ -1,4 +1,4 @@
-﻿Public Class FormSiswa
+Public Class FormSiswa
     Private Sub LoadForm(frm As Form)
         PanelUtama.Controls.Clear()
         frm.TopLevel = False
@@ -12,7 +12,4 @@
         LoadForm(New FormPengaturanNew())
     End Sub
 
-    Private Sub Label1_Click()
-
-    End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class FormAdmin
+Public Class FormAdmin
     Private Sub LoadForm(frm As Form)
         PanelUtama.Controls.Clear()
         frm.TopLevel = False
