@@ -59,9 +59,9 @@ Partial Class FormLogin
         Me.Panel1.Controls.Add(Me.txtUsername)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(358, 53)
+        Me.Panel1.Location = New System.Drawing.Point(418, 26)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(350, 358)
+        Me.Panel1.Size = New System.Drawing.Size(350, 412)
         Me.Panel1.TabIndex = 1
         '
         'btnLogin
@@ -117,7 +117,7 @@ Partial Class FormLogin
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(111, 163)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(67, 32)
         Me.PictureBox1.TabIndex = 2

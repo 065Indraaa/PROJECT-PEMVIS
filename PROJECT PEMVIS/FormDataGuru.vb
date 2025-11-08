@@ -14,4 +14,8 @@
     Private Sub TextBox2_TextChanged()
 
     End Sub
+
+    Private Sub TextBox8_TextChanged()
+
+    End Sub
 End Class

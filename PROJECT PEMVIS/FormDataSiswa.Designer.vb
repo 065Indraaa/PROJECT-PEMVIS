@@ -67,38 +67,43 @@ Partial Class FormDataSiswa
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(278, 8)
+        Me.Label1.Location = New System.Drawing.Point(185, 5)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(277, 46)
+        Me.Label1.Size = New System.Drawing.Size(191, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DATA SISWA"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(497, 20)
+        Me.TextBox4.Location = New System.Drawing.Point(331, 13)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(111, 20)
         Me.TextBox4.TabIndex = 14
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(497, 49)
+        Me.TextBox5.Location = New System.Drawing.Point(331, 32)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(111, 20)
         Me.TextBox5.TabIndex = 15
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(497, 82)
+        Me.TextBox6.Location = New System.Drawing.Point(331, 53)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox6.Size = New System.Drawing.Size(111, 20)
         Me.TextBox6.TabIndex = 16
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(497, 114)
+        Me.TextBox7.Location = New System.Drawing.Point(331, 74)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox7.Size = New System.Drawing.Size(111, 20)
         Me.TextBox7.TabIndex = 17
         '
         'DataGridView1
@@ -107,10 +112,11 @@ Partial Class FormDataSiswa
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NIS, Me.Nama, Me.JenisKelamin, Me.TTL, Me.Kelas, Me.Alamat, Me.Ayah, Me.Ibu})
         Me.DataGridView1.GridColor = System.Drawing.Color.Gray
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 321)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 209)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(831, 162)
+        Me.DataGridView1.Size = New System.Drawing.Size(587, 105)
         Me.DataGridView1.TabIndex = 18
         '
         'NIS
@@ -156,102 +162,114 @@ Partial Class FormDataSiswa
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 26)
+        Me.Label2.Location = New System.Drawing.Point(9, 17)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 20)
+        Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "NIS"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 58)
+        Me.Label3.Location = New System.Drawing.Point(9, 38)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 20)
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Nama"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(13, 88)
+        Me.Label4.Location = New System.Drawing.Point(9, 57)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 20)
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Jenis Kelamin"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 146)
+        Me.Label5.Location = New System.Drawing.Point(9, 95)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(163, 20)
+        Me.Label5.Size = New System.Drawing.Size(113, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Tempat/Tanggal Lahir"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(414, 26)
+        Me.Label6.Location = New System.Drawing.Point(276, 17)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 20)
+        Me.Label6.Size = New System.Drawing.Size(33, 13)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Kelas"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(414, 58)
+        Me.Label7.Location = New System.Drawing.Point(276, 38)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(59, 20)
+        Me.Label7.Size = New System.Drawing.Size(39, 13)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Alamat"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(414, 88)
+        Me.Label8.Location = New System.Drawing.Point(276, 57)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 20)
+        Me.Label8.Size = New System.Drawing.Size(31, 13)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Ayah"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(414, 120)
+        Me.Label9.Location = New System.Drawing.Point(276, 78)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(32, 20)
+        Me.Label9.Size = New System.Drawing.Size(22, 13)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Ibu"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(182, 20)
+        Me.TextBox1.Location = New System.Drawing.Point(121, 13)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(111, 20)
         Me.TextBox1.TabIndex = 9
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(182, 49)
+        Me.TextBox2.Location = New System.Drawing.Point(121, 32)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(111, 20)
         Me.TextBox2.TabIndex = 10
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(182, 140)
+        Me.TextBox3.Location = New System.Drawing.Point(121, 91)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(164, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(111, 20)
         Me.TextBox3.TabIndex = 11
         '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(182, 81)
+        Me.RadioButton1.Location = New System.Drawing.Point(121, 53)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(97, 24)
+        Me.RadioButton1.Size = New System.Drawing.Size(68, 17)
         Me.RadioButton1.TabIndex = 12
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Laki-Laki"
@@ -260,9 +278,10 @@ Partial Class FormDataSiswa
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(182, 110)
+        Me.RadioButton2.Location = New System.Drawing.Point(121, 71)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(116, 24)
+        Me.RadioButton2.Size = New System.Drawing.Size(79, 17)
         Me.RadioButton2.TabIndex = 13
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Perempuan"
@@ -288,18 +307,21 @@ Partial Class FormDataSiswa
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 67)
+        Me.GroupBox1.Location = New System.Drawing.Point(23, 44)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(832, 180)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(555, 117)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.MistyRose
-        Me.Button1.Location = New System.Drawing.Point(591, 253)
+        Me.Button1.Location = New System.Drawing.Point(394, 164)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 28)
+        Me.Button1.Size = New System.Drawing.Size(50, 18)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = False
@@ -307,9 +329,10 @@ Partial Class FormDataSiswa
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.MistyRose
-        Me.Button2.Location = New System.Drawing.Point(683, 253)
+        Me.Button2.Location = New System.Drawing.Point(455, 164)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 28)
+        Me.Button2.Size = New System.Drawing.Size(50, 18)
         Me.Button2.TabIndex = 21
         Me.Button2.Text = "Edit"
         Me.Button2.UseVisualStyleBackColor = False
@@ -317,9 +340,10 @@ Partial Class FormDataSiswa
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.MistyRose
-        Me.Button3.Location = New System.Drawing.Point(591, 287)
+        Me.Button3.Location = New System.Drawing.Point(394, 187)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 28)
+        Me.Button3.Size = New System.Drawing.Size(50, 18)
         Me.Button3.TabIndex = 22
         Me.Button3.Text = "Cancel"
         Me.Button3.UseVisualStyleBackColor = False
@@ -327,9 +351,10 @@ Partial Class FormDataSiswa
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.MistyRose
-        Me.Button4.Location = New System.Drawing.Point(683, 287)
+        Me.Button4.Location = New System.Drawing.Point(455, 186)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 28)
+        Me.Button4.Size = New System.Drawing.Size(50, 19)
         Me.Button4.TabIndex = 23
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = False
@@ -337,26 +362,29 @@ Partial Class FormDataSiswa
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.MistyRose
-        Me.Button5.Location = New System.Drawing.Point(764, 272)
+        Me.Button5.Location = New System.Drawing.Point(524, 175)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 28)
+        Me.Button5.Size = New System.Drawing.Size(54, 21)
         Me.Button5.TabIndex = 24
         Me.Button5.Text = "Close"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(55, 274)
+        Me.TextBox8.Location = New System.Drawing.Point(37, 178)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(215, 26)
+        Me.TextBox8.Size = New System.Drawing.Size(145, 20)
         Me.TextBox8.TabIndex = 25
         '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.MistyRose
-        Me.Button6.Location = New System.Drawing.Point(290, 274)
+        Me.Button6.Location = New System.Drawing.Point(193, 178)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(56, 28)
+        Me.Button6.Size = New System.Drawing.Size(37, 18)
         Me.Button6.TabIndex = 26
         Me.Button6.Text = "Cari"
         Me.Button6.UseVisualStyleBackColor = False
@@ -365,18 +393,20 @@ Partial Class FormDataSiswa
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 3)
+        Me.GroupBox2.Location = New System.Drawing.Point(23, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(834, 58)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(556, 38)
         Me.GroupBox2.TabIndex = 27
         Me.GroupBox2.TabStop = False
         '
         'FormDataSiswa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(851, 506)
+        Me.ClientSize = New System.Drawing.Size(606, 322)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.TextBox8)
@@ -387,6 +417,7 @@ Partial Class FormDataSiswa
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormDataSiswa"
         Me.Text = "FormDataSiswa"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
