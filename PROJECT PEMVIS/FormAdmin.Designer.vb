@@ -209,7 +209,7 @@ Partial Class FormAdmin
     End Sub
 
     Private Sub PanelUtama_Paint(sender As Object, e As PaintEventArgs)
-        Throw New NotImplementedException()
+
     End Sub
 
     Friend WithEvents PanelUtama As Panel

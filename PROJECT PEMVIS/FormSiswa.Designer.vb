@@ -31,7 +31,6 @@ Partial Class FormSiswa
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Pengaturan = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,7 +134,6 @@ Partial Class FormSiswa
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Pink
-        Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Pengaturan)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
@@ -145,15 +143,6 @@ Partial Class FormSiswa
         Me.GroupBox2.TabStop = False
         '
         'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(380, 15)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(256, 24)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "SMA HARAPAN BANGSA"
-        AddHandler Me.Label1.Click, AddressOf Me.Label1_Click
         '
         'Pengaturan
         '
@@ -195,7 +184,6 @@ Partial Class FormSiswa
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Pengaturan As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
