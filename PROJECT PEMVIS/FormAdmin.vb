@@ -12,6 +12,14 @@ Public Class FormAdmin
 
     End Sub
 
+    Private Sub Button1_Click()
+        LoadForm(New DataKelas())
+    End Sub
+
+    Private Sub Button2_Click()
+        LoadForm(New FormDataSiswa())
+    End Sub
+
     Private Sub Button3_Click()
         LoadForm(New FormDataGuru())
     End Sub

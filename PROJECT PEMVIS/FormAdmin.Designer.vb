@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class FormAdmin
     Inherits System.Windows.Forms.Form
 
@@ -136,6 +136,7 @@ Partial Class FormAdmin
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "DATA SISWA"
         Me.Button2.UseVisualStyleBackColor = False
+        AddHandler Me.Button2.Click, AddressOf Me.Button2_Click
         '
         'Button1
         '
@@ -150,6 +151,7 @@ Partial Class FormAdmin
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "DATA KELAS"
         Me.Button1.UseVisualStyleBackColor = False
+        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
         'GroupBox2
         '
@@ -167,7 +169,7 @@ Partial Class FormAdmin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(424, 15)
+        Me.Label1.Location = New System.Drawing.Point(384, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 24)
         Me.Label1.TabIndex = 2
