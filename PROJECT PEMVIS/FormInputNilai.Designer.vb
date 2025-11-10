@@ -89,8 +89,10 @@ Partial Class FormInputNilai
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(0, -1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(917, 534)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(611, 347)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         AddHandler Me.GroupBox1.Enter, AddressOf Me.GroupBox1_Enter
@@ -100,10 +102,11 @@ Partial Class FormInputNilai
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nama, Me.NIS, Me.Kelas, Me.Semester, Me.MataPelajaran, Me.NilaiPengetahuan, Me.NilaiKeterampilan, Me.Kehadiran})
-        Me.DataGridView1.Location = New System.Drawing.Point(392, 109)
+        Me.DataGridView1.Location = New System.Drawing.Point(261, 74)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(494, 363)
+        Me.DataGridView1.Size = New System.Drawing.Size(329, 214)
         Me.DataGridView1.TabIndex = 22
         '
         'Nama
@@ -149,26 +152,29 @@ Partial Class FormInputNilai
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.RosyBrown
-        Me.Button6.Location = New System.Drawing.Point(561, 76)
+        Me.Button6.Location = New System.Drawing.Point(374, 49)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 28)
+        Me.Button6.Size = New System.Drawing.Size(50, 23)
         Me.Button6.TabIndex = 21
         Me.Button6.Text = "Cari"
         Me.Button6.UseVisualStyleBackColor = False
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(392, 77)
+        Me.TextBox10.Location = New System.Drawing.Point(261, 50)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(163, 26)
+        Me.TextBox10.Size = New System.Drawing.Size(110, 20)
         Me.TextBox10.TabIndex = 20
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.RosyBrown
-        Me.Button5.Location = New System.Drawing.Point(825, 13)
+        Me.Button5.Location = New System.Drawing.Point(550, 8)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 35)
+        Me.Button5.Size = New System.Drawing.Size(50, 23)
         Me.Button5.TabIndex = 19
         Me.Button5.Text = "Close"
         Me.Button5.UseVisualStyleBackColor = False
@@ -176,9 +182,10 @@ Partial Class FormInputNilai
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.RosyBrown
-        Me.Button4.Location = New System.Drawing.Point(561, 478)
+        Me.Button4.Location = New System.Drawing.Point(374, 292)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 35)
+        Me.Button4.Size = New System.Drawing.Size(50, 23)
         Me.Button4.TabIndex = 18
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = False
@@ -186,9 +193,10 @@ Partial Class FormInputNilai
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.RosyBrown
-        Me.Button2.Location = New System.Drawing.Point(392, 478)
+        Me.Button2.Location = New System.Drawing.Point(261, 293)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 34)
+        Me.Button2.Size = New System.Drawing.Size(50, 22)
         Me.Button2.TabIndex = 16
         Me.Button2.Text = "Edit"
         Me.Button2.UseVisualStyleBackColor = False
@@ -196,9 +204,10 @@ Partial Class FormInputNilai
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.RosyBrown
-        Me.Button1.Location = New System.Drawing.Point(480, 478)
+        Me.Button1.Location = New System.Drawing.Point(320, 294)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 33)
+        Me.Button1.Size = New System.Drawing.Size(50, 21)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = False
@@ -211,42 +220,48 @@ Partial Class FormInputNilai
         Me.GroupBox3.Controls.Add(Me.TextBox8)
         Me.GroupBox3.Controls.Add(Me.Label10)
         Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Location = New System.Drawing.Point(47, 379)
+        Me.GroupBox3.Location = New System.Drawing.Point(31, 246)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(291, 105)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(194, 68)
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "KETERAMPILAN"
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(121, 67)
+        Me.TextBox9.Location = New System.Drawing.Point(81, 44)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(140, 26)
+        Me.TextBox9.Size = New System.Drawing.Size(95, 20)
         Me.TextBox9.TabIndex = 3
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(121, 34)
+        Me.TextBox8.Location = New System.Drawing.Point(81, 22)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(140, 26)
+        Me.TextBox8.Size = New System.Drawing.Size(95, 20)
         Me.TextBox8.TabIndex = 2
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(38, 73)
+        Me.Label10.Location = New System.Drawing.Point(25, 47)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(67, 20)
+        Me.Label10.Size = New System.Drawing.Size(46, 13)
         Me.Label10.TabIndex = 1
         Me.Label10.Text = "Predikat"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(38, 37)
+        Me.Label9.Location = New System.Drawing.Point(25, 24)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(55, 20)
+        Me.Label9.Size = New System.Drawing.Size(38, 13)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Angka"
         '
@@ -257,33 +272,38 @@ Partial Class FormInputNilai
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(47, 262)
+        Me.GroupBox2.Location = New System.Drawing.Point(31, 170)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(291, 101)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(194, 66)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PENGETAHUAN"
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(121, 64)
+        Me.TextBox7.Location = New System.Drawing.Point(81, 42)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(140, 26)
+        Me.TextBox7.Size = New System.Drawing.Size(95, 20)
         Me.TextBox7.TabIndex = 3
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(121, 28)
+        Me.TextBox6.Location = New System.Drawing.Point(81, 18)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(140, 26)
+        Me.TextBox6.Size = New System.Drawing.Size(95, 20)
         Me.TextBox6.TabIndex = 2
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(38, 67)
+        Me.Label8.Location = New System.Drawing.Point(25, 44)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(67, 20)
+        Me.Label8.Size = New System.Drawing.Size(46, 13)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Predikat"
         AddHandler Me.Label8.Click, AddressOf Me.Label8_Click
@@ -291,53 +311,60 @@ Partial Class FormInputNilai
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(38, 28)
+        Me.Label7.Location = New System.Drawing.Point(25, 18)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 20)
+        Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Angka"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(168, 205)
+        Me.TextBox5.Location = New System.Drawing.Point(112, 133)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(142, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(96, 20)
         Me.TextBox5.TabIndex = 10
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(168, 173)
+        Me.TextBox4.Location = New System.Drawing.Point(112, 112)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(142, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(96, 20)
         Me.TextBox4.TabIndex = 9
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(168, 141)
+        Me.TextBox3.Location = New System.Drawing.Point(112, 92)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(142, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(96, 20)
         Me.TextBox3.TabIndex = 8
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(168, 109)
+        Me.TextBox2.Location = New System.Drawing.Point(112, 71)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(142, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(96, 20)
         Me.TextBox2.TabIndex = 7
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(168, 80)
+        Me.TextBox1.Location = New System.Drawing.Point(112, 52)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(142, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(96, 20)
         Me.TextBox1.TabIndex = 6
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(42, 208)
+        Me.Label6.Location = New System.Drawing.Point(28, 135)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 20)
+        Me.Label6.Size = New System.Drawing.Size(51, 13)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Semester"
         AddHandler Me.Label6.Click, AddressOf Me.Label6_Click
@@ -345,18 +372,20 @@ Partial Class FormInputNilai
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(42, 179)
+        Me.Label5.Location = New System.Drawing.Point(28, 116)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(115, 20)
+        Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Mata Pelajaran"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(42, 148)
+        Me.Label4.Location = New System.Drawing.Point(28, 96)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 20)
+        Me.Label4.Size = New System.Drawing.Size(33, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Kelas"
         AddHandler Me.Label4.Click, AddressOf Me.Label4_Click
@@ -364,18 +393,20 @@ Partial Class FormInputNilai
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(42, 118)
+        Me.Label3.Location = New System.Drawing.Point(28, 77)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(36, 20)
+        Me.Label3.Size = New System.Drawing.Size(25, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "NIS"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(42, 83)
+        Me.Label2.Location = New System.Drawing.Point(28, 54)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 20)
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nama"
         '
@@ -383,18 +414,20 @@ Partial Class FormInputNilai
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(295, 22)
+        Me.Label1.Location = New System.Drawing.Point(197, 14)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(381, 46)
+        Me.Label1.Size = New System.Drawing.Size(265, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TABEL PENILAIAN"
         '
         'FormInputNilai
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(912, 532)
+        Me.ClientSize = New System.Drawing.Size(606, 322)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormInputNilai"
         Me.Text = "FormInputNilai"
         Me.GroupBox1.ResumeLayout(False)

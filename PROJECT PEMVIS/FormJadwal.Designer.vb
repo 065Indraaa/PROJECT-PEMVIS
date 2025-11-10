@@ -26,6 +26,7 @@ Partial Class FormJadwal
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -34,7 +35,6 @@ Partial Class FormJadwal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,60 +53,75 @@ Partial Class FormJadwal
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(2, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(1, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(770, 386)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(606, 324)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.MistyRose
-        Me.Button1.Location = New System.Drawing.Point(618, 322)
+        Me.Button1.Location = New System.Drawing.Point(622, 361)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 27)
+        Me.Button1.Size = New System.Drawing.Size(57, 21)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Keluar"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(323, 277)
+        Me.TextBox4.Location = New System.Drawing.Point(272, 216)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(200, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(135, 20)
         Me.TextBox4.TabIndex = 10
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(323, 235)
+        Me.TextBox3.Location = New System.Drawing.Point(272, 180)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(135, 20)
         Me.TextBox3.TabIndex = 9
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(272, 146)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox2.TabIndex = 8
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(323, 154)
+        Me.TextBox1.Location = New System.Drawing.Point(272, 112)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
         Me.TextBox1.TabIndex = 7
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {"Senin", "Selasa ", "Rabu ", "Kamis ", "Jumat"})
-        Me.ListBox1.Location = New System.Drawing.Point(323, 111)
+        Me.ListBox1.Location = New System.Drawing.Point(272, 79)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(200, 24)
+        Me.ListBox1.Size = New System.Drawing.Size(135, 17)
         Me.ListBox1.TabIndex = 6
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.MistyRose
-        Me.Label6.Location = New System.Drawing.Point(151, 277)
+        Me.Label6.Location = New System.Drawing.Point(101, 223)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 20)
+        Me.Label6.Size = New System.Drawing.Size(26, 13)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Jam"
         '
@@ -114,9 +129,10 @@ Partial Class FormJadwal
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.MistyRose
-        Me.Label5.Location = New System.Drawing.Point(152, 235)
+        Me.Label5.Location = New System.Drawing.Point(101, 187)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 20)
+        Me.Label5.Size = New System.Drawing.Size(33, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Kelas"
         '
@@ -124,9 +140,10 @@ Partial Class FormJadwal
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.MistyRose
-        Me.Label4.Location = New System.Drawing.Point(152, 197)
+        Me.Label4.Location = New System.Drawing.Point(101, 153)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 20)
+        Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Guru"
         AddHandler Me.Label4.Click, AddressOf Me.Label4_Click
@@ -135,9 +152,10 @@ Partial Class FormJadwal
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.MistyRose
-        Me.Label3.Location = New System.Drawing.Point(152, 157)
+        Me.Label3.Location = New System.Drawing.Point(101, 119)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(115, 20)
+        Me.Label3.Size = New System.Drawing.Size(78, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Mata Pelajaran"
         '
@@ -145,9 +163,10 @@ Partial Class FormJadwal
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.MistyRose
-        Me.Label2.Location = New System.Drawing.Point(152, 115)
+        Me.Label2.Location = New System.Drawing.Point(105, 83)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 20)
+        Me.Label2.Size = New System.Drawing.Size(26, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Hari"
         '
@@ -156,26 +175,21 @@ Partial Class FormJadwal
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(228, 22)
+        Me.Label1.Location = New System.Drawing.Point(152, 14)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(397, 46)
+        Me.Label1.Size = New System.Drawing.Size(273, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "JADWAL SEKOLAH"
         AddHandler Me.Label1.Click, AddressOf Me.Label1_Click
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(323, 197)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 26)
-        Me.TextBox2.TabIndex = 8
-        '
         'FormJadwal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 399)
+        Me.ClientSize = New System.Drawing.Size(606, 322)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormJadwal"
         Me.Text = "FormJadwal"
         AddHandler Load, AddressOf Me.FormJadwal_Load

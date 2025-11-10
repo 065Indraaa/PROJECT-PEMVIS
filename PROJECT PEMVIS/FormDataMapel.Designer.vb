@@ -52,6 +52,7 @@ Partial Class FormDataMapel
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
@@ -99,6 +100,7 @@ Partial Class FormDataMapel
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.RosyBrown
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodePelajaran, Me.NamaPelajaran, Me.NamaGuru, Me.Semester, Me.Kelas})
         Me.DataGridView1.Location = New System.Drawing.Point(37, 203)
@@ -135,61 +137,67 @@ Partial Class FormDataMapel
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.Color.RosyBrown
         Me.Button6.Location = New System.Drawing.Point(519, 148)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(51, 23)
         Me.Button6.TabIndex = 15
         Me.Button6.Text = "Cari"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(356, 150)
+        Me.TextBox5.Location = New System.Drawing.Point(348, 149)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(159, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(167, 20)
         Me.TextBox5.TabIndex = 14
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(486, 111)
+        Me.Button4.BackColor = System.Drawing.Color.RosyBrown
+        Me.Button4.Location = New System.Drawing.Point(519, 178)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(50, 21)
         Me.Button4.TabIndex = 12
         Me.Button4.Text = "Hapus"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(306, 110)
+        Me.Button3.BackColor = System.Drawing.Color.RosyBrown
+        Me.Button3.Location = New System.Drawing.Point(258, 141)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 19)
+        Me.Button3.Size = New System.Drawing.Size(50, 21)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Cancel"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(401, 77)
+        Me.Button2.BackColor = System.Drawing.Color.RosyBrown
+        Me.Button2.Location = New System.Drawing.Point(258, 166)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(50, 19)
+        Me.Button2.Size = New System.Drawing.Size(50, 23)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
+        AddHandler Me.Button2.Click, AddressOf Me.Button2_Click
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(258, 152)
+        Me.Button1.BackColor = System.Drawing.Color.RosyBrown
+        Me.Button1.Location = New System.Drawing.Point(258, 115)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(50, 19)
+        Me.Button1.Size = New System.Drawing.Size(50, 22)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox4
         '

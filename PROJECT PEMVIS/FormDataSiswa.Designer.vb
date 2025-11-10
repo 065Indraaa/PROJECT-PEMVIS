@@ -321,7 +321,7 @@ Partial Class FormDataSiswa
         Me.Button1.Location = New System.Drawing.Point(394, 164)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(50, 18)
+        Me.Button1.Size = New System.Drawing.Size(50, 19)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = False
@@ -332,7 +332,7 @@ Partial Class FormDataSiswa
         Me.Button2.Location = New System.Drawing.Point(455, 164)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(50, 18)
+        Me.Button2.Size = New System.Drawing.Size(50, 19)
         Me.Button2.TabIndex = 21
         Me.Button2.Text = "Edit"
         Me.Button2.UseVisualStyleBackColor = False
@@ -340,10 +340,10 @@ Partial Class FormDataSiswa
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.MistyRose
-        Me.Button3.Location = New System.Drawing.Point(394, 187)
+        Me.Button3.Location = New System.Drawing.Point(394, 185)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 18)
+        Me.Button3.Size = New System.Drawing.Size(50, 20)
         Me.Button3.TabIndex = 22
         Me.Button3.Text = "Cancel"
         Me.Button3.UseVisualStyleBackColor = False
@@ -351,10 +351,10 @@ Partial Class FormDataSiswa
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.MistyRose
-        Me.Button4.Location = New System.Drawing.Point(455, 186)
+        Me.Button4.Location = New System.Drawing.Point(455, 185)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(50, 19)
+        Me.Button4.Size = New System.Drawing.Size(50, 20)
         Me.Button4.TabIndex = 23
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = False
@@ -384,7 +384,7 @@ Partial Class FormDataSiswa
         Me.Button6.Location = New System.Drawing.Point(193, 178)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(37, 18)
+        Me.Button6.Size = New System.Drawing.Size(37, 20)
         Me.Button6.TabIndex = 26
         Me.Button6.Text = "Cari"
         Me.Button6.UseVisualStyleBackColor = False

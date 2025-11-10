@@ -41,7 +41,7 @@ Partial Class FormLogin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(75, 63)
+        Me.Label1.Location = New System.Drawing.Point(86, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(189, 36)
         Me.Label1.TabIndex = 0
@@ -59,15 +59,15 @@ Partial Class FormLogin
         Me.Panel1.Controls.Add(Me.txtUsername)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(418, 26)
+        Me.Panel1.Location = New System.Drawing.Point(249, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(350, 412)
+        Me.Panel1.Size = New System.Drawing.Size(345, 298)
         Me.Panel1.TabIndex = 1
         '
         'btnLogin
         '
         Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnLogin.Location = New System.Drawing.Point(126, 243)
+        Me.btnLogin.Location = New System.Drawing.Point(129, 246)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(98, 32)
         Me.btnLogin.TabIndex = 4
@@ -89,16 +89,16 @@ Partial Class FormLogin
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(173, 142)
+        Me.txtUsername.Location = New System.Drawing.Point(175, 124)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(122, 29)
+        Me.txtUsername.Size = New System.Drawing.Size(117, 29)
         Me.txtUsername.TabIndex = 5
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(56, 192)
+        Me.Label3.Location = New System.Drawing.Point(56, 190)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(96, 24)
         Me.Label3.TabIndex = 3
@@ -108,7 +108,7 @@ Partial Class FormLogin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(56, 145)
+        Me.Label2.Location = New System.Drawing.Point(56, 124)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(100, 24)
         Me.Label2.TabIndex = 2
@@ -128,7 +128,7 @@ Partial Class FormLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Pink
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(606, 322)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FormLogin"
