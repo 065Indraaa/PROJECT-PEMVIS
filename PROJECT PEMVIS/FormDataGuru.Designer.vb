@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class FormDataGuru
     Inherits System.Windows.Forms.Form
 
@@ -200,6 +200,7 @@ Partial Class FormDataGuru
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = False
+        AddHandler Me.Button2.Click, AddressOf Me.Button2_Click
         '
         'TextBox1
         '
@@ -263,6 +264,7 @@ Partial Class FormDataGuru
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(545, 102)
         Me.DataGridView1.TabIndex = 16
+        AddHandler Me.DataGridView1.CellClick, AddressOf Me.DataGridView1_CellClick
         '
         'KodeGuru
         '
@@ -304,6 +306,7 @@ Partial Class FormDataGuru
         Me.Button6.TabIndex = 15
         Me.Button6.Text = "Cari"
         Me.Button6.UseVisualStyleBackColor = False
+        AddHandler Me.Button6.Click, AddressOf Me.Button6_Click
         '
         'TextBox8
         '
@@ -324,6 +327,7 @@ Partial Class FormDataGuru
         Me.Button4.TabIndex = 12
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = False
+        AddHandler Me.Button4.Click, AddressOf Me.Button4_Click
         '
         'Button3
         '
@@ -335,6 +339,7 @@ Partial Class FormDataGuru
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Edit"
         Me.Button3.UseVisualStyleBackColor = False
+        AddHandler Me.Button3.Click, AddressOf Me.Button3_Click
         '
         'Label1
         '
@@ -363,6 +368,7 @@ Partial Class FormDataGuru
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormDataGuru"
         Me.Text = "FormDataGuru"
+        AddHandler Me.Load, AddressOf Me.FormDataGuru_Load
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)

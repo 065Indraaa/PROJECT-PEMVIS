@@ -1,8 +1,22 @@
 Imports MySql.Data.MySqlClient
 
 Public Class FormLogin
+    Dim conn As MySqlConnection
+    Dim cmd As MySqlCommand
+    Dim dr As MySqlDataReader
+
+    ' Koneksi Database
+    Sub bukaKoneksi()
+        Try
+            conn = New MySqlConnection("server=localhost;user=root;password=;database=db_sekolah")
+            conn.Open()
+        Catch ex As Exception
+            MsgBox("Koneksi Gagal: " & ex.Message)
+        End Try
+    End Sub
+
     Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        bukaKoneksi()
+        txtPassword.PasswordChar = "●"
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
@@ -16,7 +30,7 @@ Public Class FormLogin
             Dim query As String =
                 "SELECT u.*, r.nama_role FROM tb_users u " &
                 "INNER JOIN tb_role r ON u.id_role = r.id_role " &
-                "WHERE u.username=@user AND u.password=@pass AND u.status='aktif'"
+                "WHERE u.username=@user AND u.password=@pass AND u.status='Aktif'"
 
             cmd = New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@user", txtUsername.Text)
