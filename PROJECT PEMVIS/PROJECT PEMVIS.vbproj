@@ -148,7 +148,9 @@
     <Compile Include="DataKelas.Designer.vb">
       <DependentUpon>DataKelas.vb</DependentUpon>
     </Compile>
-    <Compile Include="DataKelas.vb" />
+    <Compile Include="DataKelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataSetAbsensi.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class DataKelas
     Inherits System.Windows.Forms.Form
 
@@ -30,14 +30,15 @@ Partial Class DataKelas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.namakls = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,6 +51,7 @@ Partial Class DataKelas
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(222, 320)
         Me.DataGridView1.TabIndex = 0
+        AddHandler Me.DataGridView1.CellClick, AddressOf Me.DataGridView1_CellClick
         AddHandler Me.DataGridView1.CellContentClick, AddressOf Me.DataGridView1_CellContentClick
         '
         'Namakelas
@@ -109,13 +111,13 @@ Partial Class DataKelas
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Kapasitas"
         '
-        'TextBox1
+        'namakls
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(122, 88)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(143, 26)
-        Me.TextBox1.TabIndex = 5
+        Me.namakls.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namakls.Location = New System.Drawing.Point(122, 88)
+        Me.namakls.Name = "namakls"
+        Me.namakls.Size = New System.Drawing.Size(143, 26)
+        Me.namakls.TabIndex = 5
         '
         'TextBox2
         '
@@ -125,12 +127,16 @@ Partial Class DataKelas
         Me.TextBox2.Size = New System.Drawing.Size(143, 26)
         Me.TextBox2.TabIndex = 6
         '
-        'HScrollBar1
+        'NumericUpDown1
         '
-        Me.HScrollBar1.Location = New System.Drawing.Point(122, 169)
-        Me.HScrollBar1.Name = "HScrollBar1"
-        Me.HScrollBar1.Size = New System.Drawing.Size(77, 27)
-        Me.HScrollBar1.TabIndex = 7
+        Me.NumericUpDown1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumericUpDown1.Location = New System.Drawing.Point(122, 169)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(77, 26)
+        Me.NumericUpDown1.TabIndex = 7
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {30, 0, 0, 0})
         '
         'Button1
         '
@@ -140,6 +146,7 @@ Partial Class DataKelas
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Tambah"
         Me.Button1.UseVisualStyleBackColor = True
+        AddHandler Me.Button1.Click, AddressOf Me.Button1_Click
         '
         'Button2
         '
@@ -149,6 +156,7 @@ Partial Class DataKelas
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Edit"
         Me.Button2.UseVisualStyleBackColor = True
+        AddHandler Me.Button2.Click, AddressOf Me.Button2_Click
         '
         'Button3
         '
@@ -158,20 +166,21 @@ Partial Class DataKelas
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = True
+        AddHandler Me.Button3.Click, AddressOf Me.Button3_Click
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightPink
+        Me.GroupBox1.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.HScrollBar1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.namakls)
         Me.GroupBox1.Location = New System.Drawing.Point(34, 0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(280, 310)
@@ -188,7 +197,9 @@ Partial Class DataKelas
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "DataKelas"
         Me.Text = "DataKelas"
+        AddHandler Me.Load, AddressOf Me.DataKelas_Load
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -203,9 +214,9 @@ Partial Class DataKelas
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents namakls As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents HScrollBar1 As HScrollBar
+    Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button

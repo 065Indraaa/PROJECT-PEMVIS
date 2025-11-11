@@ -1,4 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
+Imports MySql.Data.MySqlClient
 
 
 Public Class FormCatatan
@@ -13,10 +13,16 @@ Public Class FormCatatan
             Dim cmd As New MySqlCommand("SELECT * FROM db_absensi", conn)
             dr = cmd.ExecuteReader
             While dr.Read
-                DataGridView1.Rows.Add(dr.Item("id"), dr.Item("nama"), dr.Item("kelas"), dr.Item("tanggal"), dr.Item("keterangan"))
+                DataGridView1.Rows.Add(dr.Item("id"), dr.Item("nama"), dr.Item("kelas"), dr.Item("tanggal"), "", dr.Item("keterangan"))
             End While
         Catch ex As Exception
             MsgBox(ex.Message)
+        Finally
+            Try
+                If dr IsNot Nothing AndAlso Not dr.IsClosed Then dr.Close()
+            Catch
+            End Try
+            If conn.State <> ConnectionState.Closed Then conn.Close()
         End Try
     End Sub
 
@@ -49,7 +55,7 @@ Public Class FormCatatan
 
     End Sub
 
-    Private Sub Button1_Click()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         simpan()
         tampil()
     End Sub
@@ -120,5 +126,15 @@ Public Class FormCatatan
     Private Sub Button2_Click(sender As Object, e As EventArgs)
         Ubah()
         tampil()
+    End Sub
+
+    Private Sub Reset()
+        ComboBox3.Text = ""
+        ComboBox1.Text = ""
+        ComboBox2.Text = ""
+        DateTimePicker1.Value = DateTime.Now
+        TextBox1.Clear()
+        ComboBox4.Text = ""
+        Button1.Enabled = True
     End Sub
 End Class
