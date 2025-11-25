@@ -37,8 +37,6 @@ Partial Class FormDataMapel
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -46,6 +44,8 @@ Partial Class FormDataMapel
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ComboSemester = New System.Windows.Forms.ComboBox()
+        Me.ComboKelas = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,6 +53,8 @@ Partial Class FormDataMapel
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.ComboKelas)
+        Me.GroupBox1.Controls.Add(Me.ComboSemester)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
@@ -62,8 +64,6 @@ Partial Class FormDataMapel
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -199,22 +199,6 @@ Partial Class FormDataMapel
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(132, 152)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(113, 20)
-        Me.TextBox4.TabIndex = 8
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(132, 132)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(113, 20)
-        Me.TextBox3.TabIndex = 7
-        '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(132, 91)
@@ -282,6 +266,22 @@ Partial Class FormDataMapel
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DATA PELAJARAN"
         '
+        'ComboSemester
+        '
+        Me.ComboSemester.FormattingEnabled = True
+        Me.ComboSemester.Location = New System.Drawing.Point(132, 132)
+        Me.ComboSemester.Name = "ComboSemester"
+        Me.ComboSemester.Size = New System.Drawing.Size(113, 21)
+        Me.ComboSemester.TabIndex = 19
+        '
+        'ComboKelas
+        '
+        Me.ComboKelas.FormattingEnabled = True
+        Me.ComboKelas.Location = New System.Drawing.Point(132, 156)
+        Me.ComboKelas.Name = "ComboKelas"
+        Me.ComboKelas.Size = New System.Drawing.Size(113, 21)
+        Me.ComboKelas.TabIndex = 20
+        '
         'FormDataMapel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -308,8 +308,6 @@ Partial Class FormDataMapel
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataGridView1 As DataGridView
@@ -322,4 +320,6 @@ Partial Class FormDataMapel
     Friend WithEvents NamaGuru As DataGridViewTextBoxColumn
     Friend WithEvents Semester As DataGridViewTextBoxColumn
     Friend WithEvents Kelas As DataGridViewTextBoxColumn
+    Friend WithEvents ComboKelas As ComboBox
+    Friend WithEvents ComboSemester As ComboBox
 End Class

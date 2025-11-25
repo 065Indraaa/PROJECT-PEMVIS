@@ -137,4 +137,8 @@ Public Class FormCatatan
         ComboBox4.Text = ""
         Button1.Enabled = True
     End Sub
+
+    Private Sub Label6_Click()
+
+    End Sub
 End Class

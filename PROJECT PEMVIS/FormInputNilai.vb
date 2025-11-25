@@ -18,4 +18,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub FormInputNilai_Load()
+
+    End Sub
 End Class

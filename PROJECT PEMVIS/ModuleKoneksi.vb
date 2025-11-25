@@ -1,17 +1,20 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module ModuleKoneksi
-    Public conn As MySqlConnection
-    Public cmd As MySqlCommand
-    Public dr As MySqlDataReader
+    Private Const ConnectionString As String = "server=localhost;user id=root;password=;database=db_sekolah"
 
-    Public Sub bukaKoneksi()
+    Public Function OpenConnection() As MySqlConnection
+        Dim connection = New MySqlConnection(ConnectionString)
+        connection.Open()
+        Return connection
+    End Function
+
+    Public Function TryOpenConnection() As MySqlConnection
         Try
-            Dim cs As String = "server=localhost;user id=root;password=;database=db_sekolah"
-            conn = New MySqlConnection(cs)
-            If conn.State = ConnectionState.Closed Then conn.Open()
+            Return OpenConnection()
         Catch ex As Exception
             MsgBox("Koneksi gagal: " & ex.Message, MsgBoxStyle.Critical)
+            Throw
         End Try
-    End Sub
+    End Function
 End Module

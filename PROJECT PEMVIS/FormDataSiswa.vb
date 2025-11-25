@@ -10,7 +10,7 @@ Public Class FormDataSiswa
 
     ' Koneksi Database
     Sub koneksi()
-        conn = New MySqlConnection("server=localhost;user=root;password=;database=db_sekolah")
+        conn = New MySqlConnection("server=localhost;user=root;password=;database=db_sekolah;Allow Zero Datetime=True;Convert Zero Datetime=True;")
         Try
             conn.Open()
         Catch ex As Exception
@@ -117,29 +117,31 @@ Public Class FormDataSiswa
         End If
 
         Try
-            ' Get ID Kelas SEBELUM koneksi dibuka untuk INSERT
             Dim idKelas As Integer = GetIdKelas(ComboBox1.Text)
-            
+
             koneksi()
-            ' Gunakan stored procedure untuk auto create user
             cmd = New MySqlCommand("sp_insert_siswa", conn)
             cmd.CommandType = CommandType.StoredProcedure
+
             cmd.Parameters.AddWithValue("@p_nis", TextBox1.Text)
             cmd.Parameters.AddWithValue("@p_nama_lengkap", TextBox2.Text)
             cmd.Parameters.AddWithValue("@p_jenis_kelamin", jk)
-            cmd.Parameters.AddWithValue("@p_tanggal_lahir", TextBox3.Text)
             cmd.Parameters.AddWithValue("@p_id_kelas", idKelas)
             cmd.Parameters.AddWithValue("@p_alamat", TextBox5.Text)
             cmd.Parameters.AddWithValue("@p_nama_ayah", TextBox6.Text)
             cmd.Parameters.AddWithValue("@p_nama_ibu", TextBox7.Text)
+
+            ' ===== TTL STRING (VARCHAR) =====
+            cmd.Parameters.AddWithValue("@p_tanggal_lahir", TextBox3.Text)
+
             cmd.ExecuteNonQuery()
 
-            ' Ambil nama depan untuk password
             Dim namaDepan As String = TextBox2.Text.Split(" "c)(0)
 
-            MsgBox("Data Berhasil Disimpan!" & vbCrLf & _
-                   "Username: " & TextBox1.Text & vbCrLf & _
+            MsgBox("Data Berhasil Disimpan!" & vbCrLf &
+                   "Username: " & TextBox1.Text & vbCrLf &
                    "Password: " & namaDepan)
+
             Bersih()
             TampilData()
         Catch ex As Exception
@@ -164,20 +166,25 @@ Public Class FormDataSiswa
         End If
 
         Try
-            ' Get ID Kelas SEBELUM koneksi dibuka untuk UPDATE
             Dim idKelas As Integer = GetIdKelas(ComboBox1.Text)
-            
+
             koneksi()
             cmd = New MySqlCommand("UPDATE tb_siswa SET nama_lengkap=@nama, jenis_kelamin=@jk, tanggal_lahir=@ttl, id_kelas=@kelas, alamat=@alamat, nama_ayah=@ayah, nama_ibu=@ibu WHERE nis=@nis", conn)
+
             cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
             cmd.Parameters.AddWithValue("@nama", TextBox2.Text)
             cmd.Parameters.AddWithValue("@jk", jk)
+
+            ' ===== TTL STRING (VARCHAR) =====
             cmd.Parameters.AddWithValue("@ttl", TextBox3.Text)
+
             cmd.Parameters.AddWithValue("@kelas", idKelas)
             cmd.Parameters.AddWithValue("@alamat", TextBox5.Text)
             cmd.Parameters.AddWithValue("@ayah", TextBox6.Text)
             cmd.Parameters.AddWithValue("@ibu", TextBox7.Text)
+
             i = cmd.ExecuteNonQuery()
+
             If i > 0 Then
                 MsgBox("Data Berhasil Diupdate!")
                 Bersih()
@@ -205,10 +212,10 @@ Public Class FormDataSiswa
         If MsgBox("Yakin hapus data siswa ini?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             Try
                 koneksi()
-                ' Hapus siswa (user akan terhapus otomatis karena ON DELETE CASCADE)
                 cmd = New MySqlCommand("DELETE FROM tb_siswa WHERE nis=@nis", conn)
                 cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
                 i = cmd.ExecuteNonQuery()
+
                 If i > 0 Then
                     MsgBox("Data Berhasil Dihapus!")
                     Bersih()
@@ -234,6 +241,7 @@ Public Class FormDataSiswa
             koneksi()
             cmd = New MySqlCommand("SELECT s.nis, s.nama_lengkap, s.jenis_kelamin, s.tanggal_lahir, k.nama_kelas, s.alamat, s.nama_ayah, s.nama_ibu FROM tb_siswa s LEFT JOIN tb_kelas k ON s.id_kelas = k.id_kelas WHERE s.nis LIKE @cari OR s.nama_lengkap LIKE @cari", conn)
             cmd.Parameters.AddWithValue("@cari", "%" & TextBox8.Text & "%")
+
             dr = cmd.ExecuteReader
             While dr.Read
                 DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7))
@@ -250,21 +258,24 @@ Public Class FormDataSiswa
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
-            TextBox1.Text = row.Cells(0).Value.ToString() ' NIS
-            TextBox2.Text = row.Cells(1).Value.ToString() ' Nama
-            
-            ' Jenis Kelamin
+
+            TextBox1.Text = row.Cells(0).Value.ToString()
+            TextBox2.Text = row.Cells(1).Value.ToString()
+
             If row.Cells(2).Value.ToString() = "Laki-Laki" Then
                 RadioButton1.Checked = True
             Else
                 RadioButton2.Checked = True
             End If
-            
-            TextBox3.Text = row.Cells(3).Value.ToString() ' TTL
-            ComboBox1.Text = row.Cells(4).Value.ToString() ' Kelas
-            TextBox5.Text = row.Cells(5).Value.ToString() ' Alamat
-            TextBox6.Text = row.Cells(6).Value.ToString() ' Ayah
-            TextBox7.Text = row.Cells(7).Value.ToString() ' Ibu
+
+            ' TTL sekarang string penuh
+            TextBox3.Text = row.Cells(3).Value.ToString()
+
+            ComboBox1.Text = row.Cells(4).Value.ToString()
+            TextBox5.Text = row.Cells(5).Value.ToString()
+            TextBox6.Text = row.Cells(6).Value.ToString()
+            TextBox7.Text = row.Cells(7).Value.ToString()
         End If
     End Sub
+
 End Class
