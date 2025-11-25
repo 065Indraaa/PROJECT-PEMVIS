@@ -1,36 +1,24 @@
 Imports MySql.Data.MySqlClient
 
 Public Class FormDataGuru
-    Dim conn As MySqlConnection
     Dim cmd As MySqlCommand
     Dim dr As MySqlDataReader
     Dim i As Integer
-
-    ' Koneksi Database
-    Sub koneksi()
-        conn = New MySqlConnection("server=localhost;user=root;password=;database=db_sekolah")
-        Try
-            conn.Open()
-        Catch ex As Exception
-            MsgBox("Koneksi Gagal: " & ex.Message)
-        End Try
-    End Sub
 
     ' Tampilkan Data
     Sub TampilData()
         DataGridView1.Rows.Clear()
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT nip, nama_lengkap, mata_pelajaran, jenis_kelamin, alamat, no_telepon FROM v_guru_lengkap ORDER BY id_guru", conn)
-            dr = cmd.ExecuteReader
-            While dr.Read
-                DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
-            End While
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT nip, nama_lengkap, mata_pelajaran, jenis_kelamin, alamat, no_telepon FROM v_guru_lengkap ORDER BY id_guru", conn)
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                End While
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -63,28 +51,27 @@ Public Class FormDataGuru
         If RadioButton2.Checked Then jk = "Perempuan"
 
         Try
-            koneksi()
-            ' Gunakan stored procedure untuk auto create user
-            cmd = New MySqlCommand("sp_insert_guru", conn)
-            cmd.CommandType = CommandType.StoredProcedure
-            cmd.Parameters.AddWithValue("@p_nip", TextBox1.Text)
-            cmd.Parameters.AddWithValue("@p_nama_lengkap", TextBox2.Text)
-            cmd.Parameters.AddWithValue("@p_mata_pelajaran", TextBox4.Text)
-            cmd.Parameters.AddWithValue("@p_jenis_kelamin", jk)
-            cmd.Parameters.AddWithValue("@p_alamat", TextBox3.Text)
-            cmd.Parameters.AddWithValue("@p_no_telepon", TextBox5.Text)
-            cmd.ExecuteNonQuery()
-            
-            MsgBox("Data Berhasil Disimpan!" & vbCrLf & 
-                   "Username: " & TextBox1.Text & vbCrLf & 
-                   "Password: " & TextBox2.Text.Split(" "c)(0), 
+            Using conn = TryOpenConnection()
+                ' Gunakan stored procedure untuk auto create user
+                cmd = New MySqlCommand("sp_insert_guru", conn)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@p_nip", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@p_nama_lengkap", TextBox2.Text)
+                cmd.Parameters.AddWithValue("@p_mata_pelajaran", TextBox4.Text)
+                cmd.Parameters.AddWithValue("@p_jenis_kelamin", jk)
+                cmd.Parameters.AddWithValue("@p_alamat", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@p_no_telepon", TextBox5.Text)
+                cmd.ExecuteNonQuery()
+            End Using
+
+            MsgBox("Data Berhasil Disimpan!" & vbCrLf &
+                   "Username: " & TextBox1.Text & vbCrLf &
+                   "Password: " & TextBox2.Text.Split(" "c)(0),
                    MsgBoxStyle.Information)
             Bersih()
             TampilData()
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -100,24 +87,23 @@ Public Class FormDataGuru
         If RadioButton2.Checked Then jk = "Perempuan"
 
         Try
-            koneksi()
-            cmd = New MySqlCommand("UPDATE tb_guru SET nama_lengkap=@nama, mata_pelajaran=@mapel, jenis_kelamin=@jk, alamat=@alamat, no_telepon=@telp WHERE nip=@nip", conn)
-            cmd.Parameters.AddWithValue("@nip", TextBox1.Text)
-            cmd.Parameters.AddWithValue("@nama", TextBox2.Text)
-            cmd.Parameters.AddWithValue("@mapel", TextBox4.Text)
-            cmd.Parameters.AddWithValue("@jk", jk)
-            cmd.Parameters.AddWithValue("@alamat", TextBox3.Text)
-            cmd.Parameters.AddWithValue("@telp", TextBox5.Text)
-            i = cmd.ExecuteNonQuery()
-            If i > 0 Then
-                MsgBox("Data Berhasil Diupdate!")
-                Bersih()
-                TampilData()
-            End If
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("UPDATE tb_guru SET nama_lengkap=@nama, mata_pelajaran=@mapel, jenis_kelamin=@jk, alamat=@alamat, no_telepon=@telp WHERE nip=@nip", conn)
+                cmd.Parameters.AddWithValue("@nip", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@nama", TextBox2.Text)
+                cmd.Parameters.AddWithValue("@mapel", TextBox4.Text)
+                cmd.Parameters.AddWithValue("@jk", jk)
+                cmd.Parameters.AddWithValue("@alamat", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@telp", TextBox5.Text)
+                i = cmd.ExecuteNonQuery()
+                If i > 0 Then
+                    MsgBox("Data Berhasil Diupdate!")
+                    Bersih()
+                    TampilData()
+                End If
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -130,19 +116,18 @@ Public Class FormDataGuru
 
         If MsgBox("Yakin hapus data?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             Try
-                koneksi()
-                cmd = New MySqlCommand("DELETE FROM tb_guru WHERE nip=@nip", conn)
-                cmd.Parameters.AddWithValue("@nip", TextBox1.Text)
-                i = cmd.ExecuteNonQuery()
-                If i > 0 Then
-                    MsgBox("Data Berhasil Dihapus!")
-                    Bersih()
-                    TampilData()
-                End If
+                Using conn = TryOpenConnection()
+                    cmd = New MySqlCommand("DELETE FROM tb_guru WHERE nip=@nip", conn)
+                    cmd.Parameters.AddWithValue("@nip", TextBox1.Text)
+                    i = cmd.ExecuteNonQuery()
+                    If i > 0 Then
+                        MsgBox("Data Berhasil Dihapus!")
+                        Bersih()
+                        TampilData()
+                    End If
+                End Using
             Catch ex As Exception
                 MsgBox(ex.Message)
-            Finally
-                conn.Close()
             End Try
         End If
     End Sub
@@ -156,18 +141,17 @@ Public Class FormDataGuru
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         DataGridView1.Rows.Clear()
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT nip, nama_lengkap, mata_pelajaran, jenis_kelamin, alamat, no_telepon FROM v_guru_lengkap WHERE nip LIKE @cari OR nama_lengkap LIKE @cari", conn)
-            cmd.Parameters.AddWithValue("@cari", "%" & TextBox8.Text & "%")
-            dr = cmd.ExecuteReader
-            While dr.Read
-                DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
-            End While
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT nip, nama_lengkap, mata_pelajaran, jenis_kelamin, alamat, no_telepon FROM v_guru_lengkap WHERE nip LIKE @cari OR nama_lengkap LIKE @cari", conn)
+                cmd.Parameters.AddWithValue("@cari", "%" & TextBox8.Text & "%")
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                End While
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
