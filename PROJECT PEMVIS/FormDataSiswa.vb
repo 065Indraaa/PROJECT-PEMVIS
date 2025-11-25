@@ -1,38 +1,26 @@
 Imports MySql.Data.MySqlClient
 
 Public Class FormDataSiswa
-    Dim conn As MySqlConnection
     Dim cmd As MySqlCommand
     Dim dr As MySqlDataReader
     Dim da As MySqlDataAdapter
     Dim dt As DataTable
     Dim i As Integer
 
-    ' Koneksi Database
-    Sub koneksi()
-        conn = New MySqlConnection("server=localhost;user=root;password=;database=db_sekolah")
-        Try
-            conn.Open()
-        Catch ex As Exception
-            MsgBox("Koneksi Gagal: " & ex.Message)
-        End Try
-    End Sub
-
     ' Tampilkan Data
     Sub TampilData()
         DataGridView1.Rows.Clear()
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT s.nis, s.nama_lengkap, s.jenis_kelamin, s.tanggal_lahir, k.nama_kelas, s.alamat, s.nama_ayah, s.nama_ibu FROM tb_siswa s LEFT JOIN tb_kelas k ON s.id_kelas = k.id_kelas ORDER BY s.id_siswa", conn)
-            dr = cmd.ExecuteReader
-            While dr.Read
-                DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7))
-            End While
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT s.nis, s.nama_lengkap, s.jenis_kelamin, s.tanggal_lahir, k.nama_kelas, s.alamat, s.nama_ayah, s.nama_ibu FROM tb_siswa s LEFT JOIN tb_kelas k ON s.id_kelas = k.id_kelas ORDER BY s.id_siswa", conn)
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7))
+                End While
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -40,17 +28,16 @@ Public Class FormDataSiswa
     Sub LoadKelas()
         ComboBox1.Items.Clear()
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT nama_kelas FROM tb_kelas ORDER BY nama_kelas", conn)
-            dr = cmd.ExecuteReader
-            While dr.Read
-                ComboBox1.Items.Add(dr("nama_kelas").ToString())
-            End While
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT nama_kelas FROM tb_kelas ORDER BY nama_kelas", conn)
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    ComboBox1.Items.Add(dr("nama_kelas").ToString())
+                End While
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -58,18 +45,17 @@ Public Class FormDataSiswa
     Function GetIdKelas(namaKelas As String) As Integer
         Dim idKelas As Integer = 0
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT id_kelas FROM tb_kelas WHERE nama_kelas=@nama", conn)
-            cmd.Parameters.AddWithValue("@nama", namaKelas)
-            dr = cmd.ExecuteReader
-            If dr.Read Then
-                idKelas = Convert.ToInt32(dr("id_kelas"))
-            End If
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT id_kelas FROM tb_kelas WHERE nama_kelas=@nama", conn)
+                cmd.Parameters.AddWithValue("@nama", namaKelas)
+                dr = cmd.ExecuteReader
+                If dr.Read Then
+                    idKelas = Convert.ToInt32(dr("id_kelas"))
+                End If
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
         Return idKelas
     End Function
@@ -119,20 +105,21 @@ Public Class FormDataSiswa
         Try
             ' Get ID Kelas SEBELUM koneksi dibuka untuk INSERT
             Dim idKelas As Integer = GetIdKelas(ComboBox1.Text)
-            
-            koneksi()
-            ' Gunakan stored procedure untuk auto create user
-            cmd = New MySqlCommand("sp_insert_siswa", conn)
-            cmd.CommandType = CommandType.StoredProcedure
-            cmd.Parameters.AddWithValue("@p_nis", TextBox1.Text)
-            cmd.Parameters.AddWithValue("@p_nama_lengkap", TextBox2.Text)
-            cmd.Parameters.AddWithValue("@p_jenis_kelamin", jk)
-            cmd.Parameters.AddWithValue("@p_tanggal_lahir", TextBox3.Text)
-            cmd.Parameters.AddWithValue("@p_id_kelas", idKelas)
-            cmd.Parameters.AddWithValue("@p_alamat", TextBox5.Text)
-            cmd.Parameters.AddWithValue("@p_nama_ayah", TextBox6.Text)
-            cmd.Parameters.AddWithValue("@p_nama_ibu", TextBox7.Text)
-            cmd.ExecuteNonQuery()
+
+            Using conn = TryOpenConnection()
+                ' Gunakan stored procedure untuk auto create user
+                cmd = New MySqlCommand("sp_insert_siswa", conn)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@p_nis", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@p_nama_lengkap", TextBox2.Text)
+                cmd.Parameters.AddWithValue("@p_jenis_kelamin", jk)
+                cmd.Parameters.AddWithValue("@p_tanggal_lahir", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@p_id_kelas", idKelas)
+                cmd.Parameters.AddWithValue("@p_alamat", TextBox5.Text)
+                cmd.Parameters.AddWithValue("@p_nama_ayah", TextBox6.Text)
+                cmd.Parameters.AddWithValue("@p_nama_ibu", TextBox7.Text)
+                cmd.ExecuteNonQuery()
+            End Using
 
             ' Ambil nama depan untuk password
             Dim namaDepan As String = TextBox2.Text.Split(" "c)(0)
@@ -144,8 +131,6 @@ Public Class FormDataSiswa
             TampilData()
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -166,27 +151,26 @@ Public Class FormDataSiswa
         Try
             ' Get ID Kelas SEBELUM koneksi dibuka untuk UPDATE
             Dim idKelas As Integer = GetIdKelas(ComboBox1.Text)
-            
-            koneksi()
-            cmd = New MySqlCommand("UPDATE tb_siswa SET nama_lengkap=@nama, jenis_kelamin=@jk, tanggal_lahir=@ttl, id_kelas=@kelas, alamat=@alamat, nama_ayah=@ayah, nama_ibu=@ibu WHERE nis=@nis", conn)
-            cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
-            cmd.Parameters.AddWithValue("@nama", TextBox2.Text)
-            cmd.Parameters.AddWithValue("@jk", jk)
-            cmd.Parameters.AddWithValue("@ttl", TextBox3.Text)
-            cmd.Parameters.AddWithValue("@kelas", idKelas)
-            cmd.Parameters.AddWithValue("@alamat", TextBox5.Text)
-            cmd.Parameters.AddWithValue("@ayah", TextBox6.Text)
-            cmd.Parameters.AddWithValue("@ibu", TextBox7.Text)
-            i = cmd.ExecuteNonQuery()
-            If i > 0 Then
-                MsgBox("Data Berhasil Diupdate!")
-                Bersih()
-                TampilData()
-            End If
+
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("UPDATE tb_siswa SET nama_lengkap=@nama, jenis_kelamin=@jk, tanggal_lahir=@ttl, id_kelas=@kelas, alamat=@alamat, nama_ayah=@ayah, nama_ibu=@ibu WHERE nis=@nis", conn)
+                cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@nama", TextBox2.Text)
+                cmd.Parameters.AddWithValue("@jk", jk)
+                cmd.Parameters.AddWithValue("@ttl", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@kelas", idKelas)
+                cmd.Parameters.AddWithValue("@alamat", TextBox5.Text)
+                cmd.Parameters.AddWithValue("@ayah", TextBox6.Text)
+                cmd.Parameters.AddWithValue("@ibu", TextBox7.Text)
+                i = cmd.ExecuteNonQuery()
+                If i > 0 Then
+                    MsgBox("Data Berhasil Diupdate!")
+                    Bersih()
+                    TampilData()
+                End If
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
@@ -204,20 +188,19 @@ Public Class FormDataSiswa
 
         If MsgBox("Yakin hapus data siswa ini?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             Try
-                koneksi()
-                ' Hapus siswa (user akan terhapus otomatis karena ON DELETE CASCADE)
-                cmd = New MySqlCommand("DELETE FROM tb_siswa WHERE nis=@nis", conn)
-                cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
-                i = cmd.ExecuteNonQuery()
-                If i > 0 Then
-                    MsgBox("Data Berhasil Dihapus!")
-                    Bersih()
-                    TampilData()
-                End If
+                Using conn = TryOpenConnection()
+                    ' Hapus siswa (user akan terhapus otomatis karena ON DELETE CASCADE)
+                    cmd = New MySqlCommand("DELETE FROM tb_siswa WHERE nis=@nis", conn)
+                    cmd.Parameters.AddWithValue("@nis", TextBox1.Text)
+                    i = cmd.ExecuteNonQuery()
+                    If i > 0 Then
+                        MsgBox("Data Berhasil Dihapus!")
+                        Bersih()
+                        TampilData()
+                    End If
+                End Using
             Catch ex As Exception
                 MsgBox(ex.Message)
-            Finally
-                conn.Close()
             End Try
         End If
     End Sub
@@ -231,18 +214,17 @@ Public Class FormDataSiswa
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         DataGridView1.Rows.Clear()
         Try
-            koneksi()
-            cmd = New MySqlCommand("SELECT s.nis, s.nama_lengkap, s.jenis_kelamin, s.tanggal_lahir, k.nama_kelas, s.alamat, s.nama_ayah, s.nama_ibu FROM tb_siswa s LEFT JOIN tb_kelas k ON s.id_kelas = k.id_kelas WHERE s.nis LIKE @cari OR s.nama_lengkap LIKE @cari", conn)
-            cmd.Parameters.AddWithValue("@cari", "%" & TextBox8.Text & "%")
-            dr = cmd.ExecuteReader
-            While dr.Read
-                DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7))
-            End While
-            dr.Close()
+            Using conn = TryOpenConnection()
+                cmd = New MySqlCommand("SELECT s.nis, s.nama_lengkap, s.jenis_kelamin, s.tanggal_lahir, k.nama_kelas, s.alamat, s.nama_ayah, s.nama_ibu FROM tb_siswa s LEFT JOIN tb_kelas k ON s.id_kelas = k.id_kelas WHERE s.nis LIKE @cari OR s.nama_lengkap LIKE @cari", conn)
+                cmd.Parameters.AddWithValue("@cari", "%" & TextBox8.Text & "%")
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7))
+                End While
+                dr.Close()
+            End Using
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            conn.Close()
         End Try
     End Sub
 
