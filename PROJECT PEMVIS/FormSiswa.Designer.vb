@@ -102,6 +102,7 @@ Partial Class FormSiswa
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "JADWAL"
         Me.Button3.UseVisualStyleBackColor = False
+        AddHandler Me.Button3.Click, AddressOf Me.Button3_Click
         '
         'Button2
         '
@@ -142,8 +143,6 @@ Partial Class FormSiswa
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         '
-        'Label1
-        '
         'Pengaturan
         '
         Me.Pengaturan.BackColor = System.Drawing.Color.LightPink
@@ -173,7 +172,6 @@ Partial Class FormSiswa
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

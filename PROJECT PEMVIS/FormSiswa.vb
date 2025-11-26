@@ -12,4 +12,7 @@ Public Class FormSiswa
         LoadForm(New FormPengaturanNew())
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+        LoadForm(New FormJadwal())
+    End Sub
 End Class
