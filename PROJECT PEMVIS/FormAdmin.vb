@@ -31,4 +31,8 @@ Public Class FormAdmin
     Private Sub Label1_Click()
 
     End Sub
+
+    Private Sub Button5_Click()
+        LoadForm(New FormPengaturanNew())
+    End Sub
 End Class

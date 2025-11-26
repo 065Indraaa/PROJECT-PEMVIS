@@ -189,6 +189,7 @@ Partial Class FormAdmin
         Me.Button5.TabIndex = 2
         Me.Button5.Text = "Pengaturan"
         Me.Button5.UseVisualStyleBackColor = False
+        AddHandler Me.Button5.Click, AddressOf Me.Button5_Click
         '
         'FormAdmin
         '

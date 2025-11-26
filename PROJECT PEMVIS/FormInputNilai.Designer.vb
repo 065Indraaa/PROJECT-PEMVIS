@@ -23,6 +23,9 @@ Partial Class FormInputNilai
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboMapel = New System.Windows.Forms.ComboBox()
+        Me.ComboSemester = New System.Windows.Forms.ComboBox()
+        Me.ComboSiswa = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NIS = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,9 +59,6 @@ Partial Class FormInputNilai
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboSiswa = New System.Windows.Forms.ComboBox()
-        Me.ComboSemester = New System.Windows.Forms.ComboBox()
-        Me.ComboMapel = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -92,10 +92,32 @@ Partial Class FormInputNilai
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(611, 347)
+        Me.GroupBox1.Size = New System.Drawing.Size(608, 329)
         Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        AddHandler Me.GroupBox1.Enter, AddressOf Me.GroupBox1_Enter
+        Me.GroupBox1.TabStop = False        '
+        'ComboMapel
+        '
+        Me.ComboMapel.FormattingEnabled = True
+        Me.ComboMapel.Location = New System.Drawing.Point(111, 113)
+        Me.ComboMapel.Name = "ComboMapel"
+        Me.ComboMapel.Size = New System.Drawing.Size(96, 21)
+        Me.ComboMapel.TabIndex = 25
+        '
+        'ComboSemester
+        '
+        Me.ComboSemester.FormattingEnabled = True
+        Me.ComboSemester.Location = New System.Drawing.Point(111, 135)
+        Me.ComboSemester.Name = "ComboSemester"
+        Me.ComboSemester.Size = New System.Drawing.Size(96, 21)
+        Me.ComboSemester.TabIndex = 24
+        '
+        'ComboSiswa
+        '
+        Me.ComboSiswa.FormattingEnabled = True
+        Me.ComboSiswa.Location = New System.Drawing.Point(112, 46)
+        Me.ComboSiswa.Name = "ComboSiswa"
+        Me.ComboSiswa.Size = New System.Drawing.Size(96, 21)
+        Me.ComboSiswa.TabIndex = 23
         '
         'DataGridView1
         '
@@ -397,30 +419,6 @@ Partial Class FormInputNilai
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TABEL PENILAIAN"
         '
-        'ComboSiswa
-        '
-        Me.ComboSiswa.FormattingEnabled = True
-        Me.ComboSiswa.Location = New System.Drawing.Point(112, 46)
-        Me.ComboSiswa.Name = "ComboSiswa"
-        Me.ComboSiswa.Size = New System.Drawing.Size(96, 21)
-        Me.ComboSiswa.TabIndex = 23
-        '
-        'ComboSemester
-        '
-        Me.ComboSemester.FormattingEnabled = True
-        Me.ComboSemester.Location = New System.Drawing.Point(112, 113)
-        Me.ComboSemester.Name = "ComboSemester"
-        Me.ComboSemester.Size = New System.Drawing.Size(96, 21)
-        Me.ComboSemester.TabIndex = 24
-        '
-        'ComboMapel
-        '
-        Me.ComboMapel.FormattingEnabled = True
-        Me.ComboMapel.Location = New System.Drawing.Point(112, 135)
-        Me.ComboMapel.Name = "ComboMapel"
-        Me.ComboMapel.Size = New System.Drawing.Size(96, 21)
-        Me.ComboMapel.TabIndex = 25
-        '
         'FormInputNilai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -439,6 +437,22 @@ Partial Class FormInputNilai
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
+        Throw New NotImplementedException()
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs)
+        Throw New NotImplementedException()
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs)
+        Throw New NotImplementedException()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
+        Throw New NotImplementedException()
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox

@@ -195,6 +195,12 @@
     <Compile Include="FormGuru.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormInputAbsensi.Designer.vb">
+      <DependentUpon>FormInputAbsensi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputAbsensi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormInputNilai.Designer.vb">
       <DependentUpon>FormInputNilai.vb</DependentUpon>
     </Compile>
@@ -274,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGuru.resx">
       <DependentUpon>FormGuru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputAbsensi.resx">
+      <DependentUpon>FormInputAbsensi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInputNilai.resx">
       <DependentUpon>FormInputNilai.vb</DependentUpon>
